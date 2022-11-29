@@ -1,9 +1,9 @@
 ---
 title: Computer Science (Theory) for Class 11 (NEB)
 date: 2022-11-29 15:00:25 + 0545
-author: ajay
 categories: [Computer Science, Class 11]
 tags: [notes, class 11, computer science, thoery]     # TAG names should always be lowercase
+author: ajay
 math: true
 ---
 ## **1. Computer System**
@@ -366,8 +366,18 @@ $$ 100 + .011 = 100.011 $
 
 ### 2.1.2 Calculation in binary addition, subtraction
 
-### 2.1.2 One's and Two's Complement methods of binary subtraction
+### 2.1.3 One's and Two's Complement methods of binary subtraction
 
 ## 2.2 Functions and Boolean Algebra
 
 ### 2.2.1 Introduction to Boolean Algebra
+
+### 2.2.2 Introduction to Boolean values, Truth table, Boolean expression and Boolean function
+
+### 2.2.3 Logic Gates - AND, OR, NOT, NAND, NOR, XOR and XNOR
+
+It's definition, truth table, logic symbol, logic function
+
+### 2.2.4 Lasws of Boolean Algebra - Boolean Identities, Complement Laws, Identity Commutative, Associative and Distributive Laws
+
+### 2.2.5 Statement and Verification of Laws of Boolean algebra using truth table
