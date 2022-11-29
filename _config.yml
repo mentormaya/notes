@@ -78,10 +78,10 @@ theme_mode:   # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn:
+img_cdn: 'https://notes.ajaysingh.com.np'
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: '/assets/images/site_image.jpg'
 
 # boolean type, the global switch for ToC in posts.
 toc: true
@@ -112,7 +112,7 @@ assets:
     enabled: true    # boolean, keep empty means false
     # specify the Jekyll environment, empty means both
     # only works if `assets.self_host.enabled` is 'true'
-    env:         # [development|production]
+    env: development        # [development|production]
 
 pwa:
   enabled: true   # the option for PWA feature

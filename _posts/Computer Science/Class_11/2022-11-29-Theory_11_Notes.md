@@ -1,8 +1,8 @@
 ---
-title: SANKAT MOCHAN DE. RA. MA. VI
+title: Computer Science (Theory) for Class 11 (NEB)
 date: 2022-11-29 15:00:25 + 0545
 categories: [Computer Science, Class 11]
-tags: [notes, class 11, computer science]     # TAG names should always be lowercase
+tags: [notes, class 11, computer science, thoery]     # TAG names should always be lowercase
 ---
 ## Janakpurdham - 4
 
