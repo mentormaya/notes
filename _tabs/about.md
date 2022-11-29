@@ -8,4 +8,4 @@ order: 4
 {: .prompt-tip }
 
 > Name: `Ajay Singh`{: .filepath }.
-{: .prompt-tip }
+{: .prompt-info }
