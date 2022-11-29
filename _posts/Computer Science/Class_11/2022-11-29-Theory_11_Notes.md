@@ -1,6 +1,7 @@
 ---
 title: Computer Science (Theory) for Class 11 (NEB)
 date: 2022-11-29 15:00:25 + 0545
+authors: [ajay,]
 categories: [Computer Science, Class 11]
 tags: [notes, class 11, computer science, thoery]     # TAG names should always be lowercase
 ---
@@ -356,10 +357,12 @@ Step 2: Conversion of .47 to binary
 | $0.94 * 2$ | $1.88$ | Integral part: $1$ |
 | $0.88 * 2$ | $1.76$ | Integral part: $1$ |
 
->So equivalent binary of fractional part of decimal is $.011$.  
+>So equivalent binary of fractional part of decimal is $$.011$$.  
 Step 3: Combined the result of step 1 and 2.  
 Final answer can be written as:  
-$100 + .011 = 100.011$
+$$100 + .011 = 100.011$$  
+When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are  
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 {: .prompt-tip }
 
 ### 2.1.2 Calculation in binary addition, subtraction
