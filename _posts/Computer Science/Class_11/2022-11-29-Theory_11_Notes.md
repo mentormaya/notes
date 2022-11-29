@@ -1,9 +1,10 @@
 ---
 title: Computer Science (Theory) for Class 11 (NEB)
 date: 2022-11-29 15:00:25 + 0545
-authors: [ajay,]
+author: ajay
 categories: [Computer Science, Class 11]
 tags: [notes, class 11, computer science, thoery]     # TAG names should always be lowercase
+math: true
 ---
 ## **1. Computer System**
 
@@ -125,8 +126,8 @@ Following table lists the different units and their values:
 >| Storage Measurement Units | Units Equivalent |
 |-----------------|------------------|
 | 0 or 1 | 1 Bit |
-| 4 Bites | 1 Nibble |
-| 8 Bites | 1 Byte |
+| 4 Bits | 1 Nibble |
+| 8 Bits | 1 Byte |
 | 1024 Bytes | 1 Kilobyte (KB) |
 | 1024 Kilobytes | 1 Megabyte (MB) |
 | 1024 Megabytes | 1 Gigabyte (GB) |
@@ -254,11 +255,11 @@ Binary counting follows the exact same procedure, and again the incremental subs
 
 ### **Binary to Decimal**
 
-In the binary system, each bit represents an increasing power of 2, with the rightmost bit representing 2<sup>0</sup>, the next representing 2<sup>1</sup>, then 2<sup>2</sup>, and so on. The value of a binary number is the sum of the powers of 2 represented by each "1" bit. For example, the binary number 100101 is converted to decimal form as follows:
+In the binary system, each bit represents an increasing power of $$2$$, with the rightmost bit representing $$ 2^0 $$, the next representing $$ 2^1 $$, then $$ 2^2 $$, and so on. The value of a binary number is the sum of the powers of $$2$$ represented by each "1" bit. For example, the binary number 100101 is converted to decimal form as follows:
 
->(100101)<sub>2</sub> = (1 x 2<sup>5</sup> + 0 x 2<sup>4</sup> + 0 x 2<sup>3</sup> + 1 x 2<sup>2</sup> + 0 x 2<sup>1</sup> + 1 x 2<sup>0</sup>)<sub>10</sub>  
->(100101)<sub>2</sub> = (1 × 32 + 0 × 16 + 0 × 8 + 1 × 4 + 0 × 2 + 1 × 1)<sub>10</sub>  
->(100101)<sub>2</sub> = (3710)<sub>10</sub>
+>$$(100101)_{2}$$ = $$(1 * 2^5 + 0 * 2^4 + 0 * 2^3 + 1 * 2^2 + 0 * 2^1 + 1 * 2^{0})_{10}$$  
+>$$(100101)_{2}$$ = $$(1 * 32 + 0 * 16 + 0 * 8 + 1 * 4 + 0 * 2 + 1 * 1)_{10}$$  
+>$$(100101)_{2}$$ = $$(3710)_{10}$$
 {: .prompt-tip }
 
 | Decimal number | Binary number |
@@ -299,8 +300,8 @@ An easy method of converting decimal to binary number equivalents is to write do
 
 ### Steps to convert the decimal to binary equivalent
 
-* Divide the decimal number by 2 and store remainders in array.
-* Divide the quotient by 2.
+* Divide the decimal number by $2$ and store remainders in array.
+* Divide the quotient by $2$.
 * Repeat step 2 until we get the quotient equal to zero.
 * Equivalent binary number would be reverse of all remainders of step 1.
 
@@ -332,37 +333,35 @@ This divide-by-2 decimal to binary conversion technique gives the decimal number
 
 You can convert the decimal number in to binary with the similar process done before but with an extra work for the fractional part of the given number. Repeat the process done before for the integer part of the given number and follow these extra step to convert the fraction part:
 
-* Multiply the fractional decimal number by 2.
+* Multiply the fractional decimal number by $$ 2 $$.
 * Integral part of resultant decimal number will be first digit of fraction binary number.
 * Repeat step 1 using only fractional part of decimal number and then step 2.
 * And finally combine both integral and fractional part of binary number.
 
->Let's take an example for n = 4.47  
+>Let's take an example for n = $$ 4.47 $$  
 Step 1: Conversion of 4 to binary
 {: .prompt-info }
 
 | Calculations | Remainder | Quotient |
 |----------|--------|----------|
-| $4/2$ | Remainder = 0 | Quotient = 2 |
-| $2/2$ | Remainder = 0 | Quotient = 1 |
-| $1/2$ | Remainder = 1 | Quotient = 0 |
+| $4/2$ | Remainder = $$ 0 $$ | Quotient = $$ 2 $$ |
+| $2/2$ | Remainder = $$ 0 $$ | Quotient = $$ 1 $$ |
+| $1/2$ | Remainder = $$ 1 $$ | Quotient = $$ 0 $$ |
 
->So equivalent binary of integral part of decimal is $100$.  
-Step 2: Conversion of .47 to binary
+>So equivalent binary of integral part of decimal is $$ 100 $$.  
+Step 2: Conversion of $$ .47 $$ to binary
 {: .prompt-tip }
 
 | Calculations | Remainder | Quotient |
 |----------|--------|----------|
-| $0.47 * 2$ | $0.94$ | Integral part: $0$ |
-| $0.94 * 2$ | $1.88$ | Integral part: $1$ |
-| $0.88 * 2$ | $1.76$ | Integral part: $1$ |
+| $$ 0.47 * 2 $$ | $$ 0.94 $$ | Integral part: $$ 0 $$ |
+| $$ 0.94 * 2 $$ | $$ 1.88 $$ | Integral part: $$ 1 $$ |
+| $$ 0.88 * 2 $$ | $$ 1.76 $$ | Integral part: $$ 1 $$ |
 
->So equivalent binary of fractional part of decimal is $$.011$$.  
+>So equivalent binary of fractional part of decimal is $$ .011 $$.  
 Step 3: Combined the result of step 1 and 2.  
 Final answer can be written as:  
-$$100 + .011 = 100.011$$  
-When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are  
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+$$ 100 + .011 = 100.011 $
 {: .prompt-tip }
 
 ### 2.1.2 Calculation in binary addition, subtraction
