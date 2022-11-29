@@ -19,7 +19,7 @@ timezone: Asia/Kathmandu
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Notes For You!                          # the main title
+title: Notes For You!  # the main title
 
 tagline: A single place for all the notes available for your study.   # it will display as the sub-title
 
@@ -45,8 +45,8 @@ social:
     - https://twitter.com/singh_ajaykumar      # change to your twitter homepage
     - https://github.com/mentormaya       # change to your github homepage
     # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.facebook.com/mentormaya
+    - https://www.linkedin.com/in/mentormaya
 
 google_site_verification:               # fill in to your verification string
 
