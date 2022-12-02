@@ -99,25 +99,116 @@ They are the most expensive of all the computers. These computers are big genera
 Supercomputers are typically capable of handling hundreds of millions of floating points operations per second (MFLOPS). The speed of super computers generally measured in “FLOPS” (Floating Point Operations Per Second).
 Super computers are used for highly calculation- intensive tasks such as weather forecasting, climate research, molecular modeling, physical simulation, and cryptanalysis and military and Scientific agencies are heavy users.
 
->Some super computers are – Cray 1, Cray 2, Cray 3 perform 10 billion operation per second, Param, Cyber 810&830 etc.  
+   >Some super computers are – Cray 1, Cray 2, Cray 3 perform 10 billion operation per second, Param, Cyber 810&830 etc.  
+   {: .prompt-tip}
+
+## Q.No. 4. What is the difference between Hardware and Software?
+
+---
+**Difference between Hardware and Software:**  
+
+>| S.N. | Basis of Comparison | Hardware | Software |
+|:---|:------------------|:-------------------|:-------------------|
+| 1 | Definition | Hardware is a physical part of the computer that causes the processing of data. | Software is a set of instructions that tells a computer exactly what to do. |
+| 2 | Physical existence | Hardware is physical in nature and hence one can touch and see hardware. | The software cannot be physically touched but still can be used and seen. |
+| 3 | Development | It is manufactured. | It is developed and engineered. |
+| 4 | Construction or Design  | Developed using electronic and other materials. | Developed writing using instructions using a programming language. |
+| 5 | Dependency | Hardware cannot perform any task without software. | The software cannot be executed without hardware. |
+| 6 | Tangible |Hardware is tangible as hardware is a physical electronic device, that can be touched. | Software is intangible as we can see and use the software but can’t touch them. |
+| 7 | Repair | When damaged, it can be replaced with a new component. | When damaged it can be installed once more using a backup copy. |
+| 8 | Virus/Infection | Hardware cannot be infected by Viruses. | The software can be infected by Viruses. |
+| 9 | Durability | Hardware will physically wear out over time. | Software does not wear out, but it can be affected by bugs and glitches. |
+| 10 | Examples | An example of Hardware is hard drives, monitors, CPU, scanners, printers etc. | An example of software is Windows 10, Adobe Photoshop, Google Chrome etc. |
 {: .prompt-tip}
 
-1. What is the difference between Hardware and Software?
-Difference between Hardware and Software:
-S.N.
-Basis of
-Comparison
-Hardware
-Software
-1
-Definition
-Hardware is a physical part of the computer that causes the processing of data.
-Software is a set of instructions that tells a computer exactly what to do.
-2
-Physical existence
-Hardware is physical in nature and hence one can touch and see hardware.
-The software cannot be physically touched but still can be used and seen.
-3
-Development
-It is manufactured.
-It is developed and engineered.
+## Q.No. 5. What do you mean by the generation of Computer? Write different types of generation of Computer?
+
+---
+Generation in computer terminology is a change in technology a computer is/was being used. Initially, the generation term was used to distinguish between varying hardware technologies. Nowadays, generation includes both hardware and software, which together make up an entire computer system.
+
+There are five computer generations known till date. Each generation has been discussed in detail along with their time and characteristics. In the following table, approximate dates against each generation have been mentioned, which are normally accepted.  
+
+>_The following are the main five generations of computers:_
+>
+>* _First Generation_: The period of first generation: 1946-1959. Vacuum tube based.
+>* _Second Generation_: The period of second generation: 1959-1965. Transistor based.
+>* _Third Generation_: The period of third generation: 1965-1971. Integrated Circuit based.
+>* _Fourth Generation_: The period of fourth generation: 1971-1980. VLSI microprocessor based.
+>* _Fifth Generation_: The period of fifth generation: 1980-onwards. ULSI microprocessor based.
+{: .prompt-tip}
+
+## Q.No. 6. What do you mean by mobile computing? Explain its application and use cases
+
+---
+Mobile computing is human–computer interaction in which a computer is expected to be transported during normal usage, which allows for the transmission of data, voice, and video. Mobile computing involves mobile communication, mobile hardware, and mobile software. Communication issues include ad hoc networks and infrastructure networks as well as communication properties, protocols, data formats, and concrete technologies. Hardware includes mobile devices or device components. Mobile software deals with the characteristics and requirements of mobile applications: -
+
+>_**Main Principles –**_
+>
+>* Portability: Devices/nodes connected within the mobile computing system should facilitate mobility. These devices may have limited device capabilities and limited power supply but should have a sufficient processing capability and physical portability to operate in a movable environment.
+>* Connectivity: This defines the quality of service (QoS) of the network connectivity. In a mobile computing system, the network availability is expected to be maintained at a high level with a minimal amount of lag/downtime without being affected by the mobility of the connected nodes.
+>* Interactivity: The nodes belonging to a mobile computing system relate to one another to communicate and collaborate through active transactions of data.
+>* Individuality: A portable device or a mobile node connected to a mobile network often denotes an individual; a mobile computing system should be able to adopt the technology to cater to the individual needs and to obtain contextual information of each node.
+{: .prompt-tip}
+
+## Q.No. 7. What do you mean by word length in computer?
+
+---
+The word length of the processor in a computer refers to the maximum number of bits it can take as input. It is the number of bits processed by a computer CPU in a single pass. The computer further takes this input for process and gives the output. We have word lengths such as 8, 16, 32, 64 bits and so on in the computers. The word length is further used in computing data bus, address size, instruction size and they are mostly the multiples of a CPU’s word size.  
+
+"Word size" refers to the number of bits processed by a computer's CPU in one go (these days, typically 32 bits or 64 bits). Data bus size, instruction size, address size are usually multiples of the word size.  
+
+## Q.No. 8. What is the difference between input and output devices?
+
+---
+**Differences between input and output devices are listed below:**  
+
+>| S.N. | Input Devices | Output Devices |
+|:-----|:------------------------|:------------------------|
+| 1 | It accepts data from user. | It reflects processed data to user. |
+| 2 | It converts user friendly instruction into machine friendly. | It converts machine’s instructions to user intelligible. |
+| 3 | It takes the data from the user and sends it to the processor for execution. | It takes the processed data from the processor and sends it back to the user. |
+| 4 | It helps the computer is accepting the data. | It helps the computer is displaying the data. |
+| 5 | Ex: Keyboard, Image Scanner, Microphone, Pointing device, Graphics tablet, Joystick. | Ex: Monitor, Printers, Plotters, Projector, Speakers. |
+| 6 | Input devices translates user-friendly inputs into machine-understandable inputs. | Output devices translate machine-friendly outputs into user-understandable outputs. |
+{: .prompt-tip}
+
+## Q.No. 9. List and explain the various components of a computer
+
+---
+The main things that comprise a computer are – motherboard, CPU, GPU, RAM, and Hard disk drive for the storage of all the data. We will discuss all these components of the computer in detail below:  
+
+_**Motherboard**_: A motherboard is a circuit board through which all the different components of a computer communications and it keeps everything together. The input and output devices are plugged into the motherboard for function.  
+
+_**Input Unit**_: Computers respond to commands given to them in the form of numbers, alphabets, images etc. through input units or devices like – keyboard, joystick etc. These inputs are then processed and converted to computer language and then the response is the output in the language that we understand or the one we have programmed the computer with.  
+
+_**Output Unit**_: The result of the command we provide the computer with through the input device is called the output. The most used is the monitor since we give commands using the keyboard and after the processing, the result or outcome is displayed on the monitor.  
+
+_**Central Processing Unit (CPU)**_: The CPU is called the brain of the computer since no action can take place without its permission and execution as the main processing unit. It communicates with all the other components of the computer and has 3 components that help with the smooth functioning of the CPU. Components of the CPU are:  
+
+   _**Memory Unit**_: The information entered through the input devices is saved in the memory of the CPU and then passed on to the other parts. Similarly, when the output is ready it is saved in the memory before the result is given to the user.  
+
+   _**Control Unit**_: This unit controls the functioning component of the computer. It collects the data entered, leads it on for processing after the processing is done, receives the output and provides it to the user. So, getting instructions, decoding it, signaling the execution, and receiving the output is done by the control center and hence it is called the center of all processing actions that happen in the computer.  
+
+   _**Arithmetic and Logical Unit**_: This unit does mathematical calculations, arithmetic operations, comparison of data and decision making. It has circuits that are built for addition, subtraction, multiplication, division, and other calculations.
+
+_**Graphics Processing Unit (GPU)**_: Another vital component of the computer is GPU. The Graphics Processing Unit or the video card helps generate high-end visuals like the ones in video games. Good graphics like these are also helpful for people who must execute their work through images like 3D modelers and others who use resource-intensive software. It generally communicates directly with the monitor.
+
+_**Random Access Memory (RAM)**_: RAM is the most referred component in a computer. The RAM is also known as the volatile memory since it gets erased every time the computer restarts. It stores the data regarding the programs which are frequently accessed programs and processes. It helps programs to start up and close quickly. It being slower has made it more obsolete these days.
+
+## Q.No. 10. What is an operating system? Write with examples
+
+---
+An Operating System (OS) is a software that acts as an interface between computer hardware components and the user. Every computer system must have at least one operating system to run other programs. Applications like Browsers, MS Office, Notepad Games, etc., need some environment to run and perform its tasks.  
+
+The OS helps you to communicate with the computer without knowing how to speak the computer’s language. It is not possible for the user to use any computer or mobile device without having an operating system:  
+
+An operating system brings powerful benefits to computer software and software development. Without an operating system, every application would need to include its own UI, as well as the comprehensive code needed to handle all low-level functionality of the underlying computer, such as disk storage, network interfaces and so on. Considering the vast array of underlying hardware available, this would vastly bloat the size of every application and make software development impractical.  
+
+>_**Common desktop operating systems include the following:**_  
+>
+>* Windows is Microsoft's flagship operating system
+>* Mac OS is the operating system for Apple's Macintosh line of PCs and workstations.
+>* Unix is a multi-user operating system designed for flexibility and adaptability. Originally developed in the 1970s, Unix was one of the first operating systems to be written in the C language.
+>* Linux is a Unix-like operating system that was designed to provide PC users a free or low-cost alternative. Linux has a reputation as an efficient and fast-performing system.
+>* Mobile OSes like android, Symbian, IOS etc.
+{: .prompt-tip }
