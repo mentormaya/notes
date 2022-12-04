@@ -91,15 +91,10 @@ The history of telecommunication - the transmission of signals over a distance f
 ### **2.3 Block Diagram of communication System /Model**
 
 ```mermaid
+flowchart LR;
+    A(Hard) -->|Text| B(Round);
+```
 
-flowchart LR
-
-A[Hard] -->|Text| B(Round)
-B --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-
-​```
 ### **2.4 Elements of Data Communication/Transmission**
 
 ### **2.5 Simplex, Half duplex and Full duplex communication mode**
