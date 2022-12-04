@@ -92,12 +92,35 @@ The history of telecommunication - the transmission of signals over a distance f
 
 ```mermaid
 flowchart LR;
-    A(Hard) -->|Text| B(Round);
+    A(Information Source) -->|Message| B(Input Transducer);
+    B(Input Transducer) -->|Electrical Signal| C(Transmitter);
+    C(Transmitter) -->|Electrical Signal| D(Channel);
+    E(Noise) -->|Random Signal| D(Channel);
+    D(Channel) -->|Electrical Signal| F(Reciever);
+    F(Reciever) -->|Electrical Signal| G(Output Transducer);
+    G(Output Transducer) -->|Electrical Signal| H(Destination);
 ```
 
 ### **2.4 Elements of Data Communication/Transmission**
 
+[Refer to 2.1](/posts/Theory_12_Notes/#21-basic-elements-of-communication-system)
+
 ### **2.5 Simplex, Half duplex and Full duplex communication mode**
+
+Data communication happens in the form of signals between two or more computing devices or nodes. The transfer  of  data  happens over a point-to-point  or multipoint communication channel. Data communication between different devices are broadly categorised into 3 types: Simplex communication, Halfduplex communication, and Full-duplex communication.
+
+***Simplex Communication System***
+
+In Simplex mode, the communication is unidirectional, as on a one-way street. Only one of the two devices on a link can transmit, the other can only receive. The simplex mode can use the entire capacity of the channel to send data in one direction.
+Example: Keyboard and traditional monitors. The keyboard can only introduce input, the monitor can only give the output.
+
+***Half Duplex Communication System***
+
+In half-duplex mode, each station can both transmit and receive, but not at the same time. While one device is sending, the other can only receive, and vice versa. The half-duplex mode is used in cases where there is no need for communication in both directions at the same time. The entire capacity of the channel can be utilized for each direction.
+Example: Walkie-talkie in which message is sent one at a time and messages are sent in both directions.
+
+>Channel capacity=Bandwidth * Propagation Delay
+{: .prompt-tip}
 
 ### **2.6 Concept of LAN and WAN**
 
