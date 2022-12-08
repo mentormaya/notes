@@ -124,9 +124,74 @@ Example: Walkie-talkie in which message is sent one at a time and messages are s
 
 ### **2.6 Concept of LAN and WAN**
 
+Local Area Network (LAN) is a computer network, which is limited to a small area such as small office, single building, multiple buildings inside a campus etc. Typically, a Local Area Network (LAN) is a private network owned and maintained by a single organization.  
+A Wide Area Network (WAN) spans over multiple geographic locations, which is composed of multiple LANs. It is nearly impossible for a small to medium organization (except Network Service Providers) to pull network cables between their two offices in two different countries located 1000s of kilometers away. Network Service Providers (also called as ISPs) provide the connectivity solutions for Wide Area Networks (WAN).  
+
+***Differences between LAN and WAN***
+
+* A Local Area Network (LAN) is a private computer network that connects computers in small physical areas. Example: A small office, A Single building, Multiple buildings inside a campus etc. Wide Area Networks (WAN) is type of computer network to connect offices which are located in different geographical locations. Wide Area Network (WAN) depends mainly on Internet Service Providers (ISPs) for connection solutions.
+
+* Local Area Network (LAN) has higher bandwidth rates. Current Local Area Networks (LANs) runs at bandwidth speeds of 100 Mbps, 1 Gbps or 10 Gbps. Wide Area Networks (WAN) has lower bandwidth rates compared with Local Area Network (LAN). Current Wide Area Networks runs on bandwidths of 20 Mbps, 50 Mbps or 100 Mbps.
+
+* Local Area Network (LAN) bandwidth rates are almost constant. Local Area Network (LAN) bandwidth rates are dependent on characteristics of the LAN technology in use (Normally FastEthernet or Gigabit Ethernet). Since most of Wide Area Networks (WAN) connectivity solutions are dependent on Internet Service Providers (ISPs), budget related constraints affect the quality of WAN.
+
+* Most of the current Local Area Networks (LANs) use Ethernet as the LAN Standard (FastEthernet 100 Mbps, or Gigabit Ethernet 1/10 Gbps). Normally for WAN connectivity, technologies like VPN (Virtual Private Network) over Internet, or MPLS (Multi-Protocol Label Switching) are used.
+
+* Since Local Area Networks (LANs) are private networks, managed by dedicated local network administrators, Local Area Networks (LANs) are more reliable and secure than Wide Area Networks (WANs). Since Wide Area Networks (WANs) involve third-party service providers, WAN networks are less reliable and secure.
+
+* Initial set-up costs for Local Area Networks (LANs) are low as the devices required to set up the networks are cheap. Initial set-up costs for Wide Area Networks (WANs) are high, because of the devices (Routers, Firewalls etc.), cables and manpower required.
+
+* Local Area Networks (LANs) running costs are less Wide Area Networks (WANs) running costs are high. Wide Area Networks (WANs) normally have recurring monthly cost as Service Provider access fees.
+
 ### **2.7 Transmission Medium: Guided and Unguided**
 
+A transmission medium is a system or substance that can mediate the propagation of signals for the purposes of telecommunication. Signals are typically imposed on a wave of some kind suitable for the chosen medium. For example, data can modulate sound, and a transmission medium for sounds may be air, but solids and liquids may also act as the transmission medium. Vacuum or air constitutes a good transmission medium for electromagnetic waves such as light and radio waves. While material substance is not required for electromagnetic waves to propagate, such waves are usually affected by the transmission media they pass through, for instance, by absorption or reflection or refraction at the interfaces between media. Technical devices can therefore be employed to transmit or guide waves. Thus, an optical fiber or a copper cable is used as transmission media.  
+
+***Guided Medium***
+
+Guided Medium are those medium from which signal travels from one point (namely source) to another point (lets say destination) within the range or some kind of boundary. For as example optical fibre, twisted copper cable, co-axial cable. Signals inside these medium travels from the boundary of the coductor and never leaves the boundary. Hence these mediums are said to be *Guided Medium*  
+
+***Unguided Medium***
+
+Unguided Medium are those medium from which signal travels from one point (namely source) to another point (lets say destination) without any range or boundary. For as example wireless singnals, Electromagnetic waves etc. Signals in the unguided medium has no definite path and limitation. Hence these mediums are said to be *Unguided Medium*  
+
 ### **2.8 Transmission impairments terminology (Jitter, Singing, Echo, Crosstalk, Distortion, Noise, Bandwidth, Number of receivers)**
+
+In communication system, analog signals travel through transmission media, which tends to deteriorate the quality of analog signal, which means that the signal at the beginning of the medium is not the same as the signal  at the end of the medium. The imperfection causes signal impairment. Below are the causes of the impairment.
+
+***Jitter***
+
+Jitter period is the interval between two times of maximum effect (or minimum effect) of a signal characteristic that varies regularly with time. Jitter frequency, the more commonly quoted figure, is its inverse.  
+
+Jitter may be caused by electromagnetic interference and crosstalk with carriers of other signals. Jitter can cause a display monitor to flicker, affect the performance of processors in personal computers, introduce clicks or other undesired effects in audio signals, and cause loss of transmitted data between network devices. The amount of tolerable jitter depends on the affected application.
+
+***Echo***
+
+When the signal from the source is sent to the destination and somehow there is any link from destination to source may be partially or fully then the signal repeats itself. This repeatation of the signal after the certain time delay is known as Echo.
+
+***Singing***
+
+An extended form of Echo where continuosly feed from destination to source is linked, then the signal linked back is amplified each time with available noise which may finally raise the sitaution of ungenerated and unwanted noise without any input. This effect is known as singing.
+
+***Crosstalk***
+
+his is the effect caused when signal transmitted on one channel creates an unwanted effect in another channel during communication. Simply when one signal is shared in two or more transmission system then there arises cross talk. It reduces the quality of communication.
+
+***Distortion***
+
+The change in original transmitted signal waveform is known as distortion. Due to distortion receiver denote receive the original signal rather distorted signal is received. This reduces quality of communication and is one of the reason for network impairments.
+
+***Noise***
+
+The random or unwanted signal that mixes up with the original signal is called noise. There are several types of noise such as induced noise, crosstalk noise, thermal noise and impulse noise which may corrupt the signal. Induced noise comes from sources such as motors and appliances. These devices act as sending antenna and transmission medium act as receiving antenna. Thermal noise is movement of electrons in wire which creates an extra signal.  
+
+***Bandwidth***
+
+The rate of data transmission in a given medium per unit time is known as bandwidth . It is generally measured in terms of bps, Kbps, Mbps etc. Higher the bandwidth, higher will be the data transmission and faster will be the communication. But if bandwidth is low then it leads to network congestion causing network impairments.  
+
+***Number of Recievers***
+
+Number of Recievers in the Data Communication field is more important factor for the analysis of network or communication quality. The number of devices connected to the network or communication system actually effect the network congestion and those congestion may block the passage of data frequently .  
 
 ### **2.9 Basic concept of Networks Architecture: Client-Server and Peer-to-peer**
 
