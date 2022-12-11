@@ -119,14 +119,90 @@ Example: Keyboard and traditional monitors. The keyboard can only introduce inpu
 In half-duplex mode, each station can both transmit and receive, but not at the same time. While one device is sending, the other can only receive, and vice versa. The half-duplex mode is used in cases where there is no need for communication in both directions at the same time. The entire capacity of the channel can be utilized for each direction.
 Example: Walkie-talkie in which message is sent one at a time and messages are sent in both directions.
 
->Channel capacity=Bandwidth * Propagation Delay
+>Channel capacity = Bandwidth * Propagation Delay
 {: .prompt-tip}
 
 ### **2.6 Concept of LAN and WAN**
 
+***LAN***  
+
+A local area network (LAN) is a network confined to a small, localized area. Home WiFi networks and small business networks are common examples of LANs. Typically, whoever manages the LAN also manages the networking equipment it uses. A small business, for instance, will manage the routers and switches involved in setting up the LAN.  
+
+***WAN***  
+
+A wide area network (WAN) is a large computer network that connects groups of computers over large distances. WANs are often used by large businesses to connect their office networks; each office typically has its own local area network, or LAN, and these LANs connect via a WAN. These long connections may be formed in several different ways, including leased lines, VPNs, or IP tunnels.  
+A wide area network (WAN) is a large computer network that connects groups of computers over large distances. WANs are often used by large businesses to connect their office networks; each office typically has its own local area network, or LAN, and these LANs connect via a WAN. These long connections may be formed in several different ways, including leased lines, VPNs, or IP tunnels.  
+
+![WAN NETWORK](/assets/images/wan.png)
+
 ### **2.7 Transmission Medium: Guided and Unguided**
 
-### **2.8 Transmission impairments terminology (Jitter, Singing, Echo, Crosstalk, Distortion, Noise, Bandwidth, Number of receivers)**
+A transmission medium is a system or substance that can mediate the propagation of signals for the purposes of telecommunication. Signals are typically imposed on a wave of some kind suitable for the chosen medium. For example, data can modulate sound, and a transmission medium for sounds may be air, but solids and liquids may also act as the transmission medium. Vacuum or air constitutes a good transmission medium for electromagnetic waves such as light and radio waves. While material substance is not required for electromagnetic waves to propagate, such waves are usually affected by the transmission media they pass through, for instance, by absorption or reflection or refraction at the interfaces between media. Technical devices can therefore be employed to transmit or guide waves. Thus, an optical fiber or a copper cable is used as transmission media.  
+
+>For any networking to be effective, raw stream of data is to be transported from one device to other over some medium. Various transmission media can be used for transfer of data. These transmission media may be of two types −
+>
+>***Guided Medium***  
+>
+>In guided media, transmitted data travels through cabling system that has a fixed path. For example, copper wires, fibre optic wires, etc.
+>
+>***Unguided Medium***  
+>
+>In unguided media, transmitted data travels through free space in form of electromagnetic signal. For example, radio waves, lasers, etc.
+{: .prompt-tip}
+
+### **2.8 Transmission impairments terminology**
+
+In the data communication system, analog and digital signals go through the transmission medium. Transmission media are not ideal. There are some imperfections in transmission mediums. So, the signals sent through the transmission medium are also not perfect. This imperfection cause **signal impairment**.
+
+It means that signals that are transmitted at the beginning of the medium are not the same as the signals that are received at the end of the medium that is what is sent is not what is received. These impairments tend to deteriorate the quality of analog and digital signals.  
+
+### Causes of impairment
+
+***Jitter***
+
+ Jitter is the deviation from true periodicity of a presumably periodic signal, often in relation to a reference clock signal. In clock recovery applications it is called timing jitter. Jitter is a significant, and usually undesired, factor in the design of almost all communications links.
+
+ Jitter can be quantified in the same terms as all time-varying signals, e.g., root mean square (RMS), or peak-to-peak displacement. Also, like other time-varying signals, jitter can be expressed in terms of spectral density.
+
+ Jitter may be caused by electromagnetic interference and crosstalk with carriers of other signals. Jitter can cause a display monitor to flicker, affect the performance of processors in personal computers, introduce clicks or other undesired effects in audio signals, and cause loss of transmitted data between network devices. The amount of tolerable jitter depends on the affected application.
+
+***Echo***
+
+As the name implies, echo in communication systems is the return of a talker's voice. It is most apparent to the talker himself or herself. Secondarily, it can also be an annoyance to the listener. To be an impairment, the returned voice must suffer some noticeable delay. Thus we can say that echo is a reflection of the voice. The cause of echo is impedance mismatches that might be present any place in the electrical communication connection. Echo is a major annoyance to the communication user. It affects the talker more than the listener. Two factors determine the degree of annoyance of echo: its loudness and its length of delay.
+
+***Singing***
+
+Singing is the result of sustained oscillations due to positive feedback in communication amplifiers or amplifying circuits. Circuits that sing are unusable and promptly overload multiplex equipment, particularly FDM equipment.
+
+Singing may be regarded as echo that is completely out of control. This can occur at the frequency at which the circuit is resonant. Under such conditions the circuit losses at the singing frequency are so low that oscillation will continue, even after cessation of its original pulse.
+
+***Crosstalk***
+
+In electronics, crosstalk is any phenomenon by which a signal transmitted on one circuit or channel of a transmission system creates an undesired effect in another circuit or channel. Crosstalk is usually caused by undesired capacitive, inductive, or conductive coupling from one circuit or channel to another.
+
+Crosstalk is a significant issue in structured cabling, audio electronics, integrated circuit design, wireless communication and other communications systems.
+
+***Distortion***
+
+Distortion means that the signal changes its form or shape. Distortion can occur in a composite signal made of different frequencies. Each signal component has its own propagation speed (see the next section) through a medium and, therefore, its own delay in arriving at the final destination. Differences in delay may create a difference in phase if the delay is not exactly the same as the period duration. In other words, signal components at the receiver have phases different from what they had at the sender. The shape of the composite signal is therefore not the same. Figure below shows the effect of distortion on a composite signal.  
+
+![DISTORTION](/assets/images/distortion.png)
+
+***Noise***
+
+Noise is another cause of impairment. Several types of noise, such as thermal noise, induced noise, crosstalk, and impulse noise, may corrupt the signal. Thermal noise is the random motion of electrons in a wire which creates an extra signal not originally sent by the transmitter. Induced noise comes from sources such as motors and appliances. These devices act as a sending antenna, and the transmission medium acts as the receiving antenna. Crosstalk is the effect of one wire on the other. One wire acts as a sending antenna and the other as the receiving antenna. Impulse noise is a spike (a sig- nal with high energy in a very short time) that comes from power lines, lightning, and so on. Figure below shows the effect of noise on a signal.  
+
+![NOISE](/assets/images/noise.png)
+
+***Bandwidth***
+
+It is the maximum amount of data transmitted over an internet connection in a given amount of time. Bandwidth is often mistaken for internet speed when it's actually the volume of information that can be sent over a connection in a measured amount of time calculated in megabits per second (Mbps).  
+
+Bandwidth is how much information you receive every second, while speed is how fast that information is received or downloaded. Let's compare it to filling a bathtub. If the bathtub faucet has a wide opening, more water can flow at a faster rate than if the pipe was narrower. Think of the water as the bandwidth and the rate at which the water flows as the speed.
+
+***Number of receivers***
+
+Number of devices or reciever connected to the communication system consumes some amount of power from the signal comming from the channel. Hence connecting recievers of devices to the network directly effect the performance and efficiency of the communication system. To omit these kinds of power issue we can use the power boosters or power injection technique. Although in digital network the more no of clients or reciver connected to the router or network devices may result in network congestion which may result in slower network and less efficient network.
 
 ### **2.9 Basic concept of Networks Architecture: Client-Server and Peer-to-peer**
 
