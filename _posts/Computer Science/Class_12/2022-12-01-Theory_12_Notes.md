@@ -206,13 +206,115 @@ Number of devices or reciever connected to the communication system consumes som
 
 ### **2.9 Basic concept of Networks Architecture: Client-Server and Peer-to-peer**
 
-### **2.10 Some Basic Terms and Tool Used in Computer Network: IP Address, Sub Net Mask and Gateway, MAC address, Internet, Intranet, Extranet**
+Network architecture refers to the way network devices and nodes are structured or interconnected to serve the connectivity needs or accomplish the goal. Computer Network Architecture is defined as the physical and logical design of the software, hardware, protocols, and media of the transmission of data. Simply we can say that how computers are organized and how tasks are allocated to the computer.
 
-### **2.11 Network Tool: Packet tracer, Remote Login**
+***Client-Server***
+
+Client-server architecture, architecture of a computer network in which many clients (remote processors) request and receive service from a centralized server (host computer). In a client/server network, a centralized, powerful computer(server) act as a hub in which other computers or workstations(clients) can connect to. This server is the heart of the system, which manages and provides resources to any client that requests them.
+
+![Client-Server](/assets/images/client-server.png)
+
+***Peer-to-peer***
+
+In a peer-to-peer network are allocated to every device on the network. Furthermore, there is no real hierarchy in this network, all computers are considered equal, and all have the same abilities to use the resources available on this network. Instead of having a central server which would act as the shared drive, each computer that's connected to this network would act as the server for the files stored on it.
+
+The IP address space is managed globally by the Internet Assigned Numbers Authority (IANA), and by five regional Internet registries (RIRs) responsible in their designated territories for assignment to local Internet registries, such as Internet service providers (ISPs), and other end users. IPv4 addresses were distributed by IANA to the RIRs in blocks of approximately 16.8 million addresses each, but have been exhausted at the IANA level since 2011. Only one of the RIRs still has a supply for local assignments in Africa. Some IPv4 addresses are reserved for private networks and are not globally unique.
+
+![IPv4](/assets/images/peer-2-peer.png)
+
+### **2.10 Some Basic Terms and Tool Used in Computer Network:**
+
+***IP Address***
+
+An Internet Protocol address (IP address) is a numerical label such as `192.0.2.1` that is connected to a computer network that uses the Internet Protocol for communication. An IP address serves two main functions: network interface identification and location addressing. Internet Protocol version 4 (IPv4) defines an IP address as a `32-bit` number. However, because of the growth of the Internet and the depletion of available IPv4 addresses, a new version of IP (IPv6), using `128 bits` for the IP address, was standardized in 1998. IPv6 deployment has been ongoing since the mid-2000s.
+
+![Peer-to-Peer](/assets/images/IPV4.svg)
+
+***Sub Net Mask and Gateway***
+
+A subnetwork or subnet is a logical subdivision of an IP network.  The practice of dividing a network into two or more networks is called subnetting. Computers that belong to the same subnet are addressed with an identical most-significant bit-group in their IP addresses. This results in the logical division of an IP address into two fields: the network number or routing prefix and the rest field or host identifier. The rest field is an identifier for a specific host or network interface.  
+
+For IPv4, a network may also be characterized by its subnet mask or netmask, which is the bitmask that, when applied by a bitwise AND operation to any IP address in the network, yields the routing prefix. Subnet masks are also expressed in dot-decimal notation like an IP address. For example, the prefix `198.51.100.0/24` would have the subnet mask `255.255.255.0`.
+
+![Subnet Mask](/assets/images/subnet.png)
+
+A network gateway is a device or node that connects disparate networks by translating communications from one protocol to another. A gateway connects networks, while a router typically delivers data within a network. Historically, gateways and routers have been separate devices. However, it's becoming more common for their functions to be combined and simply called a router. For example, the Wi-Fi routers commonly provided for home and small business internet service are both a router (delivering data) and a gateway (translating it so destination devices can use it).
+
+![Network Gateway](/assets/images/gateway.png)
+
+A physical network gateway includes network interface cards (NICs) and inputs and outputs—usually Ethernet—and software for translating network protocols. Gateway functions may also be defined, deployed, and controlled through software, and are increasingly being built into routers and other equipment.
+
+***MAC Address***
+
+A MAC (Media Access Control) address, sometimes referred to as a hardware or physical address, is a unique, 12-character alphanumeric attribute that is used to identify individual electronic devices on a network. An example of a MAC address is: 0A-B0-D0-6F-C5-28. It is also known as “hardware address” or “physical address”, is a binary number used to uniquely identify computer network adapters. Packets that are sent on the Ethernet are always coming from a MAC address and sent to a MAC address. If a network adapter is receiving a packet, it is comparing the packet’s destination MAC address to the adapter’s own MAC address. If the addresses match, the packet is processed, otherwise it is discarded. Traditional MAC addresses are 12-digit hexadecimal numbers. The leftmost six hexadecimal digits of the address correspond to a manufacturer's unique identifier, while the rightmost six digits correspond to the serial number of the network interface card (NIC).
+
+![MAC Address](/assets/images/mac.png)
+
+***Internet***
+
+The Internet (or internet) is the global system of interconnected computer networks that uses the Internet protocol suite (TCP/IP) to communicate between networks and devices. It is a network of networks that consists of private, public, academic, business, and government networks of local to global scope, linked by a broad array of electronic, wireless, and optical networking technologies. The Internet carries a vast range of information resources and services, such as the inter-linked hypertext documents and applications of the World Wide Web (WWW), electronic mail, telephony, and file sharing.
+
+The origins of the Internet date back to the development of packet switching and research commissioned by the United States Department of Defense in the 1960s to enable time-sharing of computers. The primary precursor network, the ARPANET, initially served as a backbone for interconnection of regional academic and military networks in the 1970s. Most traditional communication media, including telephone, radio, television, paper mail and newspapers are reshaped, redefined, or even bypassed by the Internet, giving birth to new services such as email, Internet telephone, Internet television, online music, digital newspapers, and video streaming websites. Newspaper, book, and other print publishing are adapting to website technology, or are reshaped into blogging, web feeds and online news aggregators. The Internet has enabled and accelerated new forms of personal interactions through instant messaging, Internet forums, and social networking services. Online shopping has grown exponentially for major retailers, small businesses, and entrepreneurs, as it enables firms to extend their "brick and mortar" presence to serve a larger market or even sell goods and services entirely online. Business-to-business and financial services on the Internet affect supply chains across entire industries.
+
+![Internet](/assets/images/internet.png)
+
+***Intranet***
+
+An intranet is a computer network for sharing information, easier communication, collaboration tools, operational systems, and other computing services within an organization, usually to the exclusion of access by outsiders. The term is used in contrast to public networks, such as the Internet, but uses the same technology based on the Internet protocol suite.
+
+An organization-wide intranet can constitute an important focal point of internal communication and collaboration, and provide a single starting point to access internal and external resources. In its simplest form, an intranet is established with the technologies for local area networks (LANs) and wide area networks (WANs).
+
+![Intranet](/assets/images/Intranet.png)
+
+An intranet is sometimes contrasted to an extranet.
+
+***Extranet***
+
+An extranet is a controlled private network that allows access to partners, vendors and suppliers or an authorized set of customers – normally to a subset of the information accessible from an organization's intranet. An extranet is similar to a DMZ in that it provides access to needed services for authorized parties, without granting access to an organization's entire network.
+
+Historically, the term was occasionally also used in the sense of two organizations sharing their internal networks over a virtual private network (VPN).
+
+![Extranet](/assets/images/extranet2.jpg)
+
+### **2.11 Network Tool:**
+
+***Packet tracer***
+
+Packet Tracer is a cross-platform visual simulation tool designed by Cisco Systems that allows users to create network topologies and imitate modern computer networks. The software allows users to simulate the configuration of Cisco routers and switches using a simulated command line interface. Packet Tracer makes use of a drag and drop user interface, allowing users to add and remove simulated network devices as they see fit. The software is mainly focused towards Cisco Networking Academy students as an educational tool for helping them learn fundamental CCNA concepts. Previously students enrolled in a CCNA Academy program could freely download and use the tool free of charge for educational use.
+
+![Packet Tracer](/assets/images/packet_tracer.png)
+
+***Remote Login***
+
+Remote Login is a process in which user can login into remote site i.e. computer and use services that are available on the remote computer. With the help of remote login a user is able to understand result of transferring result of processing from the remote computer to the local computer.
+
+![Packet Tracer](/assets/images/Remotelogin.png)
 
 ### **2.12 Network Connecting Devices: NIC, Modem, router, switch**
 
-### **2.13 Network Topologies: Bus, Ring and star topology**
+***NIC (Network Interface Controller)***
+
+A network interface controller (NIC, also known as a network interface card, network adapter, LAN adapter or physical network interface, and by similar terms) is a computer hardware component that connects a computer to a computer network. Early network interface controllers were commonly implemented on expansion cards that plugged into a computer bus. The low cost and ubiquity of the Ethernet standard means that most newer computers have a network interface built into the motherboard, or is contained into a USB-connected dongle.
+
+The network controller implements the electronic circuitry required to communicate using a specific physical layer and data link layer standard such as Ethernet or Wi-Fi. This provides a base for a full network protocol stack, allowing communication among computers on the same local area network (LAN) and large-scale network communications through routable protocols, such as Internet Protocol (IP).
+
+![NIC](/assets/images/nic.jpg)
+
+***Modem (Modulator and Demodulator)***
+
+A modulator-demodulator or modem is a computer hardware device that converts data from a digital format into a format suitable for an analog transmission medium such as telephone or radio. A modem transmits data by modulating one or more carrier wave signals to encode digital information, while the receiver demodulates the signal to recreate the original digital information. The goal is to produce a signal that can be transmitted easily and decoded reliably. Modems can be used with almost any means of transmitting analog signals, from light-emitting diodes to radio.
+
+![MODEM](/assets/images/modem.jpg)
+
+### **2.13 Network Topologies: , Ring and star topology**
+
+Network Topology is the arrangement with which computer systems or network devices are connected to each other. Topologies may define both physical and logical aspect of the network. Both logical and physical topologies could be the same or different in a same network.
+
+***Bus Topology***
+
+In case of Bus topology, all devices share single communication line or cable. Bus topology may have problem while multiple hosts sending data at the same time. Therefore, Bus topology either uses CSMA/CD technology or recognizes one host as Bus Master to solve the issue. It is one of the simple forms of networking where a failure of a device does not affect the other devices. But failure of the shared communication line can make all other devices stop functioning.
+
+![BUS Topology](/assets/images/bus-topology.png)
 
 ### **2.14 Basic Concept OSI Reference Model**
 
