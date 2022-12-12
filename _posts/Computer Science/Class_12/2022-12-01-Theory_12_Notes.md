@@ -306,28 +306,230 @@ A modulator-demodulator or modem is a computer hardware device that converts dat
 
 ![MODEM](/assets/images/modem.jpg)
 
-### **2.13 Network Topologies: , Ring and star topology**
+### **2.13 Network Topologies: ,  and  topology**
 
 Network Topology is the arrangement with which computer systems or network devices are connected to each other. Topologies may define both physical and logical aspect of the network. Both logical and physical topologies could be the same or different in a same network.
 
 ***Bus Topology***
 
-In case of Bus topology, all devices share single communication line or cable. Bus topology may have problem while multiple hosts sending data at the same time. Therefore, Bus topology either uses CSMA/CD technology or recognizes one host as Bus Master to solve the issue. It is one of the simple forms of networking where a failure of a device does not affect the other devices. But failure of the shared communication line can make all other devices stop functioning.
+In case of Bus topology, all devices share single communication line or cable. Bus topology may have problem while multiple hosts sending data at the same time. Therefore, Bus topology either uses CSMA/CD technology or recognizes one host as Bus Master to solve the issue. It is one of the simple forms of networking where a failure of a device does not affect the other devices. But failure of the shared communication line can make all other devices stop functioning. Both ends of the shared channel have line terminator. The data is sent in only one direction and as soon as it reaches the extreme end, the terminator removes the data from the line.
 
 ![BUS Topology](/assets/images/bus-topology.png)
 
+***Ring Topology***
+
+In ring topology, each host machine connects to exactly two other machines, creating a circular network structure. When one host tries to communicate or send message to a host which is not adjacent to it, the data travels through all intermediate hosts. To connect one more host in the existing structure, the administrator may need only one more extra cable.
+
+![Ring Topology](/assets/images/ring-topology.jpg)
+
+Failure of any host results in failure of the whole ring. Thus, every connection in the ring is a point of failure. There are methods which employ one more backup ring.
+
+***Star Topology***
+
+All hosts in Star topology are connected to a central device, known as hub device, using a point-to-point connection. That is, there exists a point-to-point connection between hosts and hub. The hub device can be any of the following:
+
+* Layer-1 device such as hub or repeater
+* Layer-2 device such as switch or bridge
+* Layer-3 device such as router or gateway
+
+![Star Topology](/assets/images/Star-topology.svg)
+
+As in Bus topology, hub acts as single point of failure. If hub fails, connectivity of all hosts to all other hosts fails. Every communication between hosts, takes place through only the hub. Star topology is not expensive as to connect one more host, only one cable is required, and configuration is simple.
+
+***Mesh Topology***
+
+In this type of topology, a host is connected to one or multiple hosts. This topology has hosts in point-to-point connection with every other host or may also have hosts which are in point-to-point connection to few hosts only.
+
+![Mesh Topology](/assets/images/mesh.jpg)
+
+Hosts in Mesh topology also work as relay for other hosts which do not have direct point-to-point links. Mesh technology comes into two types:
+
+* Full Mesh: All hosts have a point-to-point connection to every other host in the network. Thus, for every new host n(n-1)/2 connections are required. It provides the most reliable network structure among all network topologies.
+* Partially Mesh: Not all hosts have point-to-point connection to every other host. Hosts connect to each other in some arbitrarily fashion. This topology exists where we need to provide reliability to some hosts out of all.
+
 ### **2.14 Basic Concept OSI Reference Model**
 
+OSI stands for Open Systems Interconnection. It has been developed by ISO – ‘International Organization for Standardization‘, in the year 1984. It is a 7 layer architecture with each layer having specific functionality to perform. All these 7 layers work collaboratively to transmit the data from one person to another across the globe.
+
+![OSI Reference Model](/assets/images/osi-ref.png)
+
+1. Physical Layer (Layer 1) :  
+The lowest layer of the OSI reference model is the physical layer. It is responsible for the actual physical connection between the devices. The physical layer contains information in the form of bits. It is responsible for transmitting individual bits from one node to the next. When receiving data, this layer will get the signal received and convert it into 0s and 1s and send them to the Data Link layer, which will put the frame back together.  
+
+   ![Physical Layer](/assets/images/physical.png)
+
+   >The functions of the physical layer are as follows:  
+   >
+   > * Bit synchronization: The physical layer provides the synchronization of the bits by providing a clock. This clock controls both sender and receiver thus providing synchronization at bit level.
+   > * Bit rate control: The Physical layer also defines the transmission rate i.e. the number of bits sent per second.
+   > * Physical topologies: Physical layer specifies the way in which the different, devices/nodes are arranged in a network i.e. bus, star, or mesh topology.
+   > * Transmission mode: Physical layer also defines the way in which the data flows between the two connected devices. The various transmission modes possible are Simplex, half-duplex and full-duplex.
+   {: .prompt-tip}
+
+2. Data Link Layer (DLL) (Layer 2) :  
+The data link layer is responsible for the node-to-node delivery of the message. The main function of this layer is to make sure data transfer is error-free from one node to another, over the physical layer. When a packet arrives in a network, it is the responsibility of DLL to transmit it to the Host using its MAC address.
+
+    >The functions of the Data Link layer are :  
+    >
+    > * Framing: Framing is a function of the data link layer. It provides a way for a sender to transmit a set of bits that are meaningful to the receiver. This can be accomplished by attaching special bit patterns to the beginning and end of the frame.
+    > * Physical addressing: After creating frames, the Data link layer adds physical addresses (MAC address) of the sender and/or receiver in the header of each frame.
+    > * Error control: Data link layer provides the mechanism of error control in which it detects and retransmits damaged or lost frames.
+    > * Flow Control: The data rate must be constant on both sides else the data may get corrupted thus, flow control coordinates the amount of data that can be sent before receiving acknowledgement.
+    > * Access control: When a single communication channel is shared by multiple devices, the MAC sub-layer of the data link layer helps to determine which device has control over the channel at a given time.
+    {: .prompt-tip}
+
+3. Network Layer (Layer 3) :  
+The network layer works for the transmission of data from one host to the other located in different networks. It also takes care of packet routing i.e. selection of the shortest path to transmit the packet, from the number of routes available. The sender & receiver’s IP addresses are placed in the header by the network layer.  
+
+   >The functions of the Network layer are :  
+   >
+   > * Routing: The network layer protocols determine which route is suitable from source to destination. This function of the network layer is known as routing.
+   > * Logical Addressing: In order to identify each device on internetwork uniquely, the network layer defines an addressing scheme. The sender & receiver’s IP addresses are placed in the header by the network layer. Such an address distinguishes each device uniquely and universally.
+   {: .prompt-tip}
+
+4. Transport Layer (Layer 4) :  
+
+   The transport layer provides services to the application layer and takes services from the network layer. The data in the transport layer is referred to as Segments. It is responsible for the End to End Delivery of the complete message. The transport layer also provides the acknowledgement of the successful data transmission and re-transmits the data if an error is found.
+
+   At sender’s side: Transport layer receives the formatted data from the upper layers, performs Segmentation, and also implements Flow & Error control to ensure proper data transmission. It also adds Source and Destination port numbers in its header and forwards the segmented data to the Network Layer.  
+
+   > Note: The sender needs to know the port number associated with the receiver’s application.  
+   {: .prompt-tip}
+
+   Generally, this destination port number is configured, either by default or manually. For example, when a web application makes a request to a web server, it typically uses port number 80, because this is the default port assigned to web applications. Many applications have default ports assigned.  
+
+   At receiver’s side: Transport Layer reads the port number from its header and forwards the Data which it has received to the respective application. It also performs sequencing and reassembling of the segmented data.  
+
+   >The functions of the transport layer are as follows:  
+   >  
+   > * Segmentation and Reassembly: This layer accepts the message from the (session) layer, and breaks the message into smaller units. Each of the segments produced has a header associated with it. The transport layer at the destination station reassembles the message.
+   > * Service Point Addressing: In order to deliver the message to the correct process, the transport layer header includes a type of address called service point address or port address. Thus by specifying this address, the transport layer makes sure that the message is delivered to the correct process.
+   {: .prompt-tip}
+
+5. Session Layer (Layer 5) :  
+   This layer is responsible for the establishment of connection, maintenance of sessions, authentication, and also ensures security.  
+
+   >The functions of the session layer are :  
+   >
+   > * Session establishment, maintenance, and termination: The layer allows the two processes to establish, use and terminate a connection.
+   > * Synchronization: This layer allows a process to add checkpoints which are considered synchronization points into the data. These synchronization points help to identify the error so that the data is re-synchronized properly, and ends of the messages are not cut prematurely and data loss is avoided.
+   > * Dialog Controller: The session layer allows two systems to start communication with each other in half-duplex or full-duplex.
+   {: .prompt-tip}
+
+6. Presentation Layer (Layer 6):
+The presentation layer is also called the Translation layer. The data from the application layer is extracted here and manipulated as per the required format to transmit over the network.  
+
+   >The functions of the presentation layer are :  
+   >
+   > * Translation: For example, ASCII to EBCDIC.
+   > * Encryption/ Decryption: Data encryption translates the data into another form or code. The encrypted data is known as the ciphertext and the decrypted data is known as plain text. A key value is used for encrypting as well as decrypting data.
+   > * Compression: Reduces the number of bits that need to be transmitted on the network.
+   {: .prompt-tip}
+
+7. Application Layer (Layer 7) :
+At the very top of the OSI Reference Model stack of layers, we find the Application layer which is implemented by the network applications. These applications produce the data, which has to be transferred over the network. This layer also serves as a window for the application services to access the network and for displaying the received information to the user.  
+
+   >The functions of the Application layer are :  
+   >
+   > * Network Virtual Terminal
+   > * FTAM-File transfer access and management
+   > * Mail Services
+   > * Directory Services
+   {: .prompt-tip}
+
 ### **2.15 Internet Protocol Addressing**
+
+IP address is an address having information about how to reach a specific host, especially outside the LAN. An IP address is a 32 bit unique address having an address space of $$2^{32}$$.  
+Generally, there are two notations in which IP address is written, dotted decimal notation and hexadecimal notation.
+
+Dotted Decimal Notation:
+
+![Dotted Decimal Notation](/assets/images/dotted-notation.jpg)
+
+Some points to be noted about dotted decimal notation:
+
+* The value of any segment (byte) is between 0 and 255 (both included).
+* There are no zeroes preceding the value in any segment (054 is wrong, 54 is correct).
+
+The 32 bit IP address is divided into five sub-classes. These are:
+
+![IP Classes](/assets/images/ip_classes.png)
+
+>Range of special IP addresses:
+>
+> * 169.254.0.0 – 169.254.0.16 : Link local addresses
+> * 127.0.0.0 – 127.0.0.8 : Loop-back addresses
+> * 0.0.0.0 – 0.0.0.8 : used to communicate within the current network.
+{: .prompt-tip}
+
+Each of these classes has a valid range of IP addresses. Classes D and E are reserved for multicast and experimental purposes respectively. The order of bits in the first octet determine the classes of IP address.
+
+IPv4 address is divided into two parts:
+
+* Network ID
+* Host ID
+
+The class of IP address is used to determine the bits used for network ID and host ID and the number of total networks and hosts possible in that particular class. Each ISP or network administrator assigns IP address to each device that is connected to its network.
+
+![IP Classes](/assets/images/ip-classes.jpg)
+
+>Note: IP addresses are globally managed by Internet Assigned Numbers Authority(IANA) and regional Internet registries(RIR).
+>
+>Note: While finding the total number of host IP addresses, 2 IP addresses are not counted and are therefore, decreased from the total count because the first IP address of any network is the network number and whereas the last IP address is reserved for broadcast IP.
+{: .prompt-tip}
 
 ## **3. Web Technology II**
 
 ### **3.1 Introduction**
 
-A computer is an electronic device, operating under the control of instructions stored in its own memory that can accept data (input), process the data according to specified rules, produce information (output), and store the information for future use.  
-The physical parts that make up a computer (the central processing unit, input, output, and memory) are called hardware. Programs that tell a computer what to do are called software. A set of instructions that perform a particular task is called a program, software program, or software. Peripherals are any hardware device connected to a computer, any part of the computer outside the CPU and working memory. Some examples of peripherals are keyboards, the mouse, monitors, printers, scanners, disk and tape drives, microphones, speakers, joysticks, plotters, and cameras. Computer is an advanced electronic device that takes raw data as input from the user and processes these data under the control of set of instructions (called program) and gives the result (output) and saves output for the future use. It can process both numerical and non-numerical (arithmetic and logical) calculations.
+Web technologies refers to the way computers/devices communicate with each other using mark up languages. It invo It is communication across the web, and create, deliver or manage web content using hypertext markup language (HTML).  In the past few decades, web technology has undergone a dramatic transition, from a few marked up web pages to the ability to do very specific work on a network without interruption.
+
+A web browser is used to access web pages. Web browsers can be defined as programs that display text, data, pictures, animation, and video on the Internet. Hyperlinked resources on the World Wide Web can be accessed using software interfaces provided by Web browsers.
+
+> ***Few terms of web technology***
+>
+> * World Wide Web (WWW): The World Wide Web is based on several different technologies : Web browsers, Hypertext Markup Language (HTML) and Hypertext Transfer Protocol (HTTP).
+>
+> * Web Browser: The web browser is an application software to explore www (World Wide Web). It provides an interface between the server and the client and requests to the server for web documents and services.
+>
+> * Web Server: Web server is a program which processes the network requests of the users and serves them with files that create web pages. This exchange takes place using Hypertext Transfer Protocol (HTTP).
+>
+> * Web Pages: A webpage is a digital document that is linked to the World Wide Web and viewable by anyone connected to the internet has a web browser.
+>
+> * Web Development: Web development refers to the building, creating, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.
+{: .prompt-tip}
+
+### Web Development can be classified into two ways
+
+* Frontend Development:  
+  The part of a website that the user interacts directly is termed as front end. It is also referred to as the ‘client side’ of the application.
+  
+  ![Frontend Development](/assets/images/front-end.png)
+
+* Backend Development:  
+  Backend is the server side of a website. It is the part of the website that users cannot see and interact. It is the portion of software that does not come in direct contact with the users. It is used to store and arrange data.
+
+  ![Backend Development](/assets/images/back-end.jpeg)
 
 ### **3.2 Server side and Client Side Scripting**
+
+Server-side scripting is a technique used in web development which involves employing scripts on a web server which produces a response customized for each user's (client's) request to the website. The alternative is for the web server itself to deliver a static web page. Scripts can be written in any of a number of server-side scripting languages that are available (see below). Server-side scripting is distinguished from client-side scripting where embedded scripts, such as JavaScript, are run client-side in a web browser, but both techniques are often used together.
+
+Server-side scripting is often used to provide a customized interface for the user. These scripts may assemble client characteristics for use in customizing the response based on those characteristics, the user's requirements, access rights, etc. Server-side scripting also enables the website owner to hide the source code that generates the interface, whereas, with client-side scripting, the user has access to all the code received by the client. A downside to the use of server-side scripting is that the client needs to make further requests over the network to the server in order to show new information to the user via the web browser. These requests can slow down the experience for the user, place more load on the server, and prevent the use of the application when the user is disconnected from the server.
+
+Client side scripting is a process in which the code along with HTML web page is sent to the client by the server. Here, the code refers to the script.
+
+In other simple words, client side scripting is a process in which scripts are executed by browsers without connecting the server.
+
+The code executes on the browser of client’s computer either during the loading of web page or after the web page has been loaded.
+
+Client side scripting is mainly used for dynamic user interface elements, such as pull-down menus, navigation tools, animation buttons, data validation purpose, etc.
+
+Today, it is rapidly growing and evolving day by day. As a result, writing client side web programming is now easier and faster, thereby, reducing load on the server.
+
+JavaScript and jQuery are by far the most important client-side scripting languages or web scripting languages and widely used to create a dynamic and responsive webpage and websites.
+
+The browser (temporarily) downloads the code in the local computer and starts processing it without the server. Therefore, the client side scripting is browser dependent.
 
 ### **3.3 Introduction of internet technology**
 
