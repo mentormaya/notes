@@ -320,7 +320,7 @@ In case of Bus topology, all devices share single communication line or cable. B
 
 In ring topology, each host machine connects to exactly two other machines, creating a circular network structure. When one host tries to communicate or send message to a host which is not adjacent to it, the data travels through all intermediate hosts. To connect one more host in the existing structure, the administrator may need only one more extra cable.
 
-![Ring Topology](/assets/images/ring-topology.jpg)
+![Ring Topology](/assets/images/Ring-topology.jpg)
 
 Failure of any host results in failure of the whole ring. Thus, every connection in the ring is a point of failure. There are methods which employ one more backup ring.
 
@@ -332,7 +332,7 @@ All hosts in Star topology are connected to a central device, known as hub devic
 * Layer-2 device such as switch or bridge
 * Layer-3 device such as router or gateway
 
-![Star Topology](/assets/images/Star-topology.svg)
+![Star Topology](/assets/images/star-topology.svg)
 
 As in Bus topology, hub acts as single point of failure. If hub fails, connectivity of all hosts to all other hosts fails. Every communication between hosts, takes place through only the hub. Star topology is not expensive as to connect one more host, only one cable is required, and configuration is simple.
 
