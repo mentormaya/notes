@@ -1,12 +1,16 @@
 function generatePDF(){
     console.log('Generating PDF! Please wait...');
     const post = document.querySelector('.post');
-    var opt = {
-        margin:       0.7,
-        filename:     'myfile.pdf',
-        image:        { type: 'png', quality: 0.98 },
-        html2canvas:  { scale: 1 },
-        jsPDF:        { unit: 'in', format: 'A4', orientation: 'portrait' }
+    var pdf = new jsPDF(); 
+    var specialElementHandlers = { 
+        '#editor': function (element, renderer) { 
+            return true; 
+        } 
     };
-    html2pdf().set(opt).from(post).save();
+    // console.log(post.innerHTML)
+    pdf.fromHTML( post.innerHTML, 15, 15, { 
+        'width': 190, 
+            'elementHandlers': specialElementHandlers 
+    }); 
+    pdf.save('sample-page.pdf');
 }
