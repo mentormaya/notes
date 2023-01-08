@@ -483,7 +483,7 @@ A digital camera is a camera that captures photographs in digital memory. Most c
 
 Digital and digital movie cameras share an optical system, typically using a lens with a variable diaphragm to focus light onto an image pickup device. The diaphragm and shutter admit a controlled amount of light to the image, just as with film, but the image pickup device is electronic rather than chemical. However, unlike film cameras, digital cameras can display images on a screen immediately after being recorded, and store and delete images from memory. Many digital cameras can also record moving videos with sound. Some digital cameras can crop and stitch pictures and perform other elementary image editing.
 
-### **1.2.8 Output Devices: , Printer (Dot Matrix, Inkjet, Laser), Speaker**
+### **1.2.8 Output Devices:**
 
 An output device is any piece of computer hardware equipment which converts information into a human-perceptible form or, historically, into a physical machine-readable form for use with other non-computerized equipment. It can be text, graphics, tactile, audio, or video. Examples include monitors, printers, speakers, headphones, projectors etc.
 
@@ -498,7 +498,57 @@ A liquid-crystal display (LCD) is a flat-panel display or other electronically m
 **LED**  
 A LED display is a flat panel display that uses an array of light-emitting diodes as pixels for a video display. Their brightness allows them to be used outdoors where they are visible in the sun for store signs and billboards. In recent years, they have also become commonly used in destination signs on public transport vehicles, as well as variable-message signs on highways. LED displays are capable of providing general illumination in addition to visual display, as when used for stage lighting or other decorative (as opposed to informational) purposes. LED displays can offer higher contrast ratios than a projector and are thus an alternative to traditional projection screens, and they can be used for large, uninterrupted (without a visible grid arising from the bezels of individual displays) video walls. microLED displays are LED displays with smaller LEDs, which poses significant development challenges.
 
-### **1.2.9 Hardware Interfaces: Parallel Port, Serial Port, USB Ports, HDMI and Expansion Slots**
+**Printer (Dot Matrix, Inkjet, Laser)**  
+A printer is an external hardware output device that takes the electronic data stored on a computer or other device and generates a hard copy. For example, if you created a report on your computer, you could print several copies to hand out at a staff meeting. Printers are one of the most popular computer peripherals and are commonly used to print text and photos. The picture is an example of an inkjet computer printer, the Lexmark Z605.
+
+![Printer](https://www.computerhope.com/jargon/i/inkjet.png)
+
+**Dot Matrix**
+IBM created the first dot matrix printer in 1957. However, the first dot matrix impact printer was introduced by Centronics in 1970. To create letters and images, the print head, which contains pins, sits over an ink ribbon. This ribbon rests above a piece of paper. As the print head moves across the ribbon (usually horizontally), the pins press into the ribbon to imprint ink onto the page (like a typewriter). As these pins print several dots, you can see where this printer got its name.
+
+![Dot Matrix](https://www.shutterstock.com/image-photo/continuous-paper-printer-office-260nw-1039414429.jpg)
+
+**Inkjet**
+While inkjet printers started being developed in the late 1950s, it wasn't until the late 1970s that they were able to reproduce decent digital images. These higher-quality inkjet printers were developed by multiple companies, including Canon, Epson, and Hewlett-Packard. Inkjet printers are similar to dot matrix printers in that the images they create are composed of dots. However, the dots on an inkjet printer are shot onto the page rather than using a ribbon and pins. Furthermore, an inkjet printer's dots are smaller, and their print speed is faster. See our inkjet printer page for further information about this printer.
+
+![Inkjet](https://5.imimg.com/data5/EM/HM/MY-55025141/canon-inkjet-printers-available-in-madurai-showroom-500x500.jpg)
+
+**Laser**
+In the early 1970s, Gary Starkweather invented the laser printer while working at Xerox by modifying one of their model 7000 copiers. However, it wasn't until 1984, when Hewlett-Packard introduced the HP LaserJet, that laser printers became more widely available and affordable. The following year, Apple introduced the Apple LaserWriter, which introduced PostScript technology to the printer market. Laser printers are more complex than their predecessors. For information on how they work, see our laser printer definition.
+
+![Laser](https://5.imimg.com/data5/NM/AK/MY-3529379/laser-printer-1000x1000.jpg)
+
+**Speaker**  
+A speaker is an output device that produces sound through an oscillating transducer called a driver. Speakers are plugged into a computer's sound card via a myriad of interfaces, such as a phone connector for analog audio, or SPDIF for digital audio. While speakers can be connected through cables, wireless speakers are connected to the host device through radio technology such as Bluetooth.  
+Speakers are most often used in pairs, which allows the speaker system to produce positional audio. When more than one pair is used, it is referred to as surround sound.  
+Certain models of computers includes a built-in speaker, which may sacrifice audio quality in favor of size. For example, the built-in speaker of a smartphone allows the users to listen to media without attaching an external speaker.
+
+### **1.2.9 Hardware Interfaces:**
+
+A hardware interface specifies the plugs, sockets, cables and electrical signals that pass through each line between the CPU and a peripheral device or communications network. It also stipulates which data trigger which functions, and the control software that "drives" the hardware is also part of the hardware interface.
+
+**Parallel Port**
+A parallel port is another type of computer port to connect a peripheral device to the computer system. As its name implies, a parallel port can transmit multiple bits of data all together at the same time. Therefore, in the case of parallel ports, the rate of data transmission is relatively high as compared to series ports because these transmit data without any hold-up.
+
+Parallel ports are mainly used to connect those computer peripheral devices that require high bandwidth. The most common examples of such devices are printers, monitors, projectors, etc.
+
+**Serial Port**
+Serial Ports provide an interface to connect serial lines to prepare a serial communication. Serial ports are the types of computer ports through which the data bits are transmitted as a single stream of binary 0s and 1s in the form of electric signals. Serial ports provide only a single transmission path that can be a single wire, a pair of wires, or a single channel in case of wireless communication.
+
+Serial ports are the oldest communication interfaces that are mainly used to connect printers and modem to the computer system. But in modern computers, serial ports are used to connect modern devices like flat-screen monitors, security cameras, GPS devices, etc. Serial ports are sometimes also called COM Ports (or Communication Ports).
+
+**USB Ports**  
+The most widely used hardware interface for attaching external devices to computers is USB. It connects keyboards, mice, printers, cameras, music players, flash drives and external storage drives. A USB port is a standard cable connection interface for personal computers and consumer electronics devices. USB stands for Universal Serial Bus, an industry standard for short-distance digital data communications. USB ports allow USB devices to be connected to each other with and transfer digital data over USB cables. They can also supply electric power across the cable to devices that need it.
+
+**HDMI**
+Short for High Definition Multimedia Interface, HDMI is a connector and cable capable of transmitting high-quality and high-bandwidth streams of audio and video between devices. The HDMI technology is used with devices such as an HDTV, Projector, DVD player, or Blu-ray player. The picture is an example of an HDMI cable from Mediabridge.
+
+The HDMI ports are found either on the video card or motherboard on the back of the computer. It is important to note that not all computers and video cards have HDMI connectors.
+
+**Expansion Slots**
+Alternatively known as a bus slot or expansion port, an expansion slot is a connection or port inside a computer on the motherboard or riser card. It provides an installation point for a hardware expansion card to be connected. For example, if you wanted to install a new video card in the computer, you'd purchase a video expansion card and install that card into the compatible expansion slot.
+
+You're most likely only going to encounter AGP, PCI, and PCI Express when working with computers today.
 
 ## **2. Number System and Conservation Boolean Logic**
 
@@ -640,35 +690,129 @@ You can convert the decimal number in to binary with the similar process done be
 * Repeat step 1 using only fractional part of decimal number and then step 2.
 * And finally combine both integral and fractional part of binary number.
 
->Let's take an example for n = $$ 4.47 $$  
-Step 1: Conversion of 4 to binary
-{: .prompt-info }
+  >Let's take an example for n = $$ 4.47 $$  
+  Step 1: Conversion of 4 to binary
+  {: .prompt-info }
 
-| Calculations | Remainder | Quotient |
-|----------|--------|----------|
-| $4/2$ | Remainder = $$ 0 $$ | Quotient = $$ 2 $$ |
-| $2/2$ | Remainder = $$ 0 $$ | Quotient = $$ 1 $$ |
-| $1/2$ | Remainder = $$ 1 $$ | Quotient = $$ 0 $$ |
+  | Calculations | Remainder | Quotient |
+  |----------|--------|----------|
+  | $4/2$ | Remainder = $$ 0 $$ | Quotient = $$ 2 $$ |
+  | $2/2$ | Remainder = $$ 0 $$ | Quotient = $$ 1 $$ |
+  | $1/2$ | Remainder = $$ 1 $$ | Quotient = $$ 0 $$ |
 
->So equivalent binary of integral part of decimal is $$ 100 $$.  
-Step 2: Conversion of $$ .47 $$ to binary
-{: .prompt-tip }
+  >So equivalent binary of integral part of decimal is $$ 100 $$.  
+  Step 2: Conversion of $$ .47 $$ to binary
+  {: .prompt-tip }
 
-| Calculations | Remainder | Quotient |
-|----------|--------|----------|
-| $$ 0.47 * 2 $$ | $$ 0.94 $$ | Integral part: $$ 0 $$ |
-| $$ 0.94 * 2 $$ | $$ 1.88 $$ | Integral part: $$ 1 $$ |
-| $$ 0.88 * 2 $$ | $$ 1.76 $$ | Integral part: $$ 1 $$ |
+  | Calculations | Remainder | Quotient |
+  |----------|--------|----------|
+  | $$ 0.47 * 2 $$ | $$ 0.94 $$ | Integral part: $$ 0 $$ |
+  | $$ 0.94 * 2 $$ | $$ 1.88 $$ | Integral part: $$ 1 $$ |
+  | $$ 0.88 * 2 $$ | $$ 1.76 $$ | Integral part: $$ 1 $$ |
 
->So equivalent binary of fractional part of decimal is $$ .011 $$.  
-Step 3: Combined the result of step 1 and 2.  
-Final answer can be written as:  
-$$ 100 + .011 = 100.011 $
-{: .prompt-tip }
+  >So equivalent binary of fractional part of decimal is $$ .011 $$.  
+  Step 3: Combined the result of step 1 and 2.  
+  Final answer can be written as:  
+  $$ 100 + .011 = 100.011 $
+  {: .prompt-tip }
 
 ### 2.1.2 Calculation in binary addition, subtraction
 
+`Binary addition` is one of the binary operations. To recall, the term “Binary Operation” represents the basic operations of mathematics that are performed on two operands. Basic arithmetic operations like addition, subtraction, multiplication, and division, play an important role in mathematics.
+
+The binary addition operation works similarly to the base 10 decimal system, except that it is a base 2 system. The binary system consists of only two digits, 1 and 0. Most of the functionalities of the computer system use the binary number system. The binary code uses the digits 1’s and 0’s to make certain processes turn off or on. The process of the addition operation is very familiar to the decimal system by adjusting to the base 2.
+
+**Rules of Binary Addition**
+Binary addition is much easier than the decimal addition when you remember the following tricks or rules. Using these rules, any binary number can be easily added. The four rules of binary addition are:
+
+0 + 0 = 0  
+0 + 1 = 1  
+1 + 0 = 1  
+1 + 1 =10  
+
+A few examples of binary additions are as follows:
+
+Example 1: 10001 + 11101
+Solution:
+
+```
+            1
+      1 0 0 0 1
+  (+) 1 1 1 0 1
+   ———————————–——
+    1 0 1 1 1 0
+```
+
+Example 2: 10111 + 110001
+
+Solution:
+
+```
+              1 1 1
+            1 0 1 1 1
+      (+) 1 1 0 0 0 1
+      ————————————————
+        1 0 0 1 0 0 0
+```
+
 ### 2.1.3 One's and Two's Complement methods of binary subtraction
+
+Binary subtraction is one of the four binary operations, where we perform the subtraction method for two binary numbers (comprising only two digits, 0 and 1). This operation is similar to the basic arithmetic subtraction performed on decimal numbers in Maths. Hence, when we subtract 1 from 0, we need to borrow 1 from the next higher order digit, to reduce the digit by 1 and the remainder left here is also 1.
+
+Can you subtract binary numbers? The answer is yes. Subtraction of binary numbers is an arithmetic operation similar to the subtraction of decimal numbers or base 10 numbers. For example, 1 + 1 + 1 = 3 in base 10 and 1 + 1 + 1 = 11 in binary number system. When you add and subtract binary numbers, you will need to be careful when borrowing as these will take place more often.
+
+When you subtract several columns of binary digits, you must take into account the borrowing. When 1 is to be subtracted from 0, the result is 1 where 1 is borrowed from the next highest order bit or digit.
+
+**Rules and tricks**: Binary subtraction is much easier than the decimal subtraction when you remember the following rules:
+
+```
+0 – 0 = 0
+0 – 1 = 1 ( with a borrow of 1)
+1 – 0 = 1
+1 – 1 = 0
+```
+
+Now, look at the example of the binary subtraction: 101 from 1010.
+
+**Procedure to do Binary Subtraction:**
+`1010`
+(-) 101
+
+Step 1: First consider the 1’s column, and subtract the one’s column,( 0 – 1 ) and it gives the result 1 as per the condition of binary subtraction with a borrow of 1 from the 10’s place.
+
+Step 2: After borrowing 1 from the 10’s column, the value 1 in the 10’s column is changed into the value 0
+
+```
+  1 Borrow
+  1 0 1 0
+(-) 1 0 1
+—————————
+  1
+```
+
+Step 3: So, subtract the value in the 10’s place, ( 0 – 0 ) = 0.
+
+1 Borrow
+1 0 1 0
+(-) 1 0 1
+
+——————
+
+0 1
+
+Step 4: Now subtract the values in 100’s place. Borrow 1 from the 1000’s place ( 0 – 1 ) = 1.
+
+1 1 Borrow
+
+1 0 1 0
+
+(-) 1 0 1
+
+——————
+
+0 1 0 1
+
+So, the resultant of the subtraction operation is 0101.
 
 ## 2.2 Functions and Boolean Algebra
 
