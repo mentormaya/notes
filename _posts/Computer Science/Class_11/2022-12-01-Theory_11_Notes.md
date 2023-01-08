@@ -736,7 +736,7 @@ Example 1: 10001 + 11101
 Solution:
 
 ```
-            1
+            1  Carry
       1 0 0 0 1
   (+) 1 1 1 0 1
    ———————————–——
@@ -748,7 +748,7 @@ Example 2: 10111 + 110001
 Solution:
 
 ```
-              1 1 1
+              1 1 1  Carry
             1 0 1 1 1
       (+) 1 1 0 0 0 1
       ————————————————
@@ -772,57 +772,174 @@ When you subtract several columns of binary digits, you must take into account t
 1 – 1 = 0
 ```
 
-Now, look at the example of the binary subtraction: 101 from 1010.
+Now, look at the example of the binary subtraction: `101` from `1010`.
 
 **Procedure to do Binary Subtraction:**
 `1010`
-(-) 101
+(-) `101`
 
 Step 1: First consider the 1’s column, and subtract the one’s column,( 0 – 1 ) and it gives the result 1 as per the condition of binary subtraction with a borrow of 1 from the 10’s place.
 
 Step 2: After borrowing 1 from the 10’s column, the value 1 in the 10’s column is changed into the value 0
 
 ```
-  1 Borrow
+      1 Borrow
   1 0 1 0
 (-) 1 0 1
 —————————
-  1
+        1
 ```
 
 Step 3: So, subtract the value in the 10’s place, ( 0 – 0 ) = 0.
 
-1 Borrow
-1 0 1 0
+```
+      1 Borrow
+  1 0 1 0
 (-) 1 0 1
-
-——————
-
-0 1
+————————————
+      0 1
+```
 
 Step 4: Now subtract the values in 100’s place. Borrow 1 from the 1000’s place ( 0 – 1 ) = 1.
 
-1 1 Borrow
-
-1 0 1 0
-
+```
+  1   1 Borrow
+  1 0 1 0
 (-) 1 0 1
+——————————
+  0 1 0 1
+```
 
-——————
+So, the resultant of the subtraction operation is `0101`.
 
-0 1 0 1
+When you cross-check the binary subtraction resultant value with the decimal value, the resultant value should be the same.  
+The binary value 1010 is equal to the decimal value 10, and 101 is equivalent to 5.  
+So, `10 – 5 = 5`.
+Therefore, the decimal number 5 is equal to the binary number `0101`.
 
-So, the resultant of the subtraction operation is 0101.
+### **Binary Subtraction Using 1’s Complement**
 
-## 2.2 Functions and Boolean Algebra
+* The 0 in the MSB for singed binary represents the positive sign
+* The 1 in the MSB for singed binary represents the negative sign
+
+### **Procedures for Binary Subtraction by 1’s Complement**
+
+* Write the 1’s complement of the subtrahend.
+* Then add the 1’s complement subtrahend with the minuend.
+* If the result has a carryover, then add that carry over in the least significant bit (LSB).
+* If there is no carryover, then take the 1’s complement of the resultant, and it is `negative`.
+
+**Example**
+$$(110101)_{2} – (100101)_{2}$$
+
+Solution:
+$$(1 1 0 1 0 1)_{2}$$ = $$5310_{10}$$
+
+$$(1 0 0 1 0 1)_{2}$$ = $$3710_{10}$$ – subtrahend
+
+Now take the 1’s complement of the subtrahend and add with minuend.
+
+```
+    1 carry
+    1 1 0 1 0 1
+(+) 0 1 1 0 1 0
+——————————————————
+    0 0 1 1 1 1
+         (+)  1 carry
+——————————————————
+    0 1 0 0 0 0
+
+Therefore, the solution is 010000
+```
+
+Decimal equivalent of $$(010000)_{2} = 1610_{10}$$
+
+### **Subtraction using 2's complement**
+
+2’s complement of a number can be found by adding a 1 to the 1’s complement of a number.
+These are the following steps to subtract two binary numbers using 2's complement
+
+* In the first step, find the 2's complement of the subtrahend.
+* Add the complement number with the minuend.
+* If we get the carry by adding both the numbers, then we discard this carry and the result is positive else take 2's complement of the result which will be negative.
+
+**Example:**  
+(i) $$110110_{2} - 10110_{2}$$
+
+The numbers of bits in the subtrahend is 5 while that of minuend is 6. We make the number of bits in the subtrahend equal to that of minuend by taking a `0’ in the sixth place of the subtrahend.
+
+Now, 2’s complement of `010110` is (`101101` + `1`) i.e.`101010`. Adding this with the minuend.
+
+```
+                  1 1 0 1 1 0      Minuend
+              (+) 1 0 1 0 1 0      2’s complement of subtrahend
+              ——————————————————
+   Carry over 1   1 0 0 0 0 0      Result of addition
+```
+
+After dropping the carry over we get the result of subtraction to be `100000`.
+
+(ii) 10110 – 11010
+
+Solution:
+
+2’s complement of `11010` is `(00101 + 1)` i.e. `00110`. Hence
+
+```
+                      Minued -          1 0 1 1 0
+2’s complement of subtrahend -          0 0 1 1 0
+————————————————————————————————————————————————————
+          Result of addition -          1 1 1 0 0
+```
+
+As there is no carry over, the result of subtraction is negative and is obtained by writing the 2’s complement of `11100` i.e.`(00011 + 1)` or `00100`.
+
+Hence the difference is `– 100`.
+
+## 2.2 Logic Functions and Boolean Algebra
+
+Logic Functions are the algebraic functions of boolean variables or so called binary variables also being algebra as a boolean algebra. In short they are also reffered as a boolean logic functions or Logic Gates.
+
+A gate is an electronic device that produces a result based on two or more binary input values.
+
+Boolean algebra is algebra for the manipulation of objects that can take on only two values, typically true and false. It is common to interpret the digital value 0 as false and the digital value 1 as true.
+
+* Boolean Expression: Combining the variables and operation yields Boolean expressions.  
+* Boolean Function: A Boolean function typically has one or more input values and yields a result, based on these input value, in the range {0, 1}.  
+* A Boolean operator can be completely described using a table that list inputs, all possible values for these inputs, and the resulting values of the operation. A truth table shows the relationship, in tabular form, between the input values and the result of a specific Boolean operator or function on the input variables.
 
 ### 2.2.1 Introduction to Boolean Algebra
 
+Boolean algebra is the algebra of logic that deals with the study of binary variables and logical operations. It makes possible to transform logical statements into mathematical symbols and to calculate the truth or falsity of related statements by using rules. It is named after George Boole, a 19th-century Mathematician and Philosopher, who was the first to try and to formalize what we call logic or reasoning.
+
+In computer science field, binary logic is referred as 'Digital Logic' which is considered as the heart of the operation of all modern digital computers. It shows the logical relationship between two or more logical functions. Instead of the use of T and F for true and false (which is frequently used for the truth tables) for the indication of the state of the sentences, Boolean algebra usually denotes it by 1 and 0 respectively. It is a branch of algebra in which the values of the variables are the truth values; true or false respectively.
+
 ### 2.2.2 Introduction to Boolean values, Truth table, Boolean expression and Boolean function
+
+A boolean variable is the variables which have only two states i.e. true/ false or right/ wrong or on/off or 0/1. As a computer is a binary system, it operates on an electronic signal which has only 2 possible states.
+
+The signal that does not change its state with time is called constant signal and its value always remains the same i.e. either 1 or 0 whereas a variable signal continuously changes its state according to the time. At some point, the value of the variable signal may be 1 and at some another point, it might be 0.Therefore, these variables which consist of only two values i.e. 1 and 0 are Boolean variables or logic variables. These variables are denoted by English capital letters like A, B, X, Y, etc.
+
+A truth table is a mathematical table used in logic—specifically in connection with Boolean algebra, boolean functions.  
+
+A truth table has one column for each input variable (for example, P and Q), and one final column showing all of the possible results of the logical operation that the table represents (for example, P XOR Q). Each row of the truth table contains one possible configuration of the input variables (for instance, P=true Q=false), and the result of the operation for those values. See the examples below for further clarification. Ludwig Wittgenstein is generally credited with inventing and popularizing the truth table in his Tractatus Logico-Philosophicus, which was completed in 1918 and published in 1921. Such a system was also independently proposed in 1921 by Emil Leon Post. An even earlier iteration of the truth table has also been found in unpublished manuscripts by Charles Sanders Peirce from 1893, antedating both publications by nearly 30 years.
 
 ### 2.2.3 Logic Gates - AND, OR, NOT, NAND, NOR, XOR and XNOR
 
-It's definition, truth table, logic symbol, logic function
+**AND**  
+Logical conjunction is an operation on two logical values, typically the values of two propositions, that produces a value of true if both of its operands are true.
+
+The truth table for p AND q (also written as p ∧ q, Kpq, p & q, or p.q) is as follows:
+
+Logical conjunction
+p	q	p ∧ q
+T	T	T
+T	F	F
+F	T	F
+F	F	F
+In ordinary language terms, if both p and q are true, then the conjunction p ∧ q is true. For all other assignments of logical values to p and to q the conjunction p ∧ q is false.
+
+It can also be said that if p, then p ∧ q is q, otherwise p ∧ q is p.
 
 ### 2.2.4 Lasws of Boolean Algebra - Boolean Identities, Complement Laws, Identity Commutative, Associative and Distributive Laws
 
