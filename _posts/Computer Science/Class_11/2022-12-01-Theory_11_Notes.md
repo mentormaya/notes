@@ -180,21 +180,323 @@ Mobile computing is human–computer interaction in which a computer is expected
 
 ### **1.2 Computer System and IO Devices**
 
-### **1.2.1 Concept of Computer Architecture and Orgamization**
+### **1.2.1 Concept of Computer Architecture and Organization**
+
+Architecture in the computer system, same as anywhere else, refers to the externally visual attributes of the system. That's why Computer Organization and Architecture is the study of internal working, structuring, and implementation of a computer system.
+
+Computers are a key part of our everyday lives, from  the machines we use for work to the smartphones and smartwatches we rely on.
+
+All computers, no matter their size, are based around a set of rules stating how software and hardware join together and interact to make them work. This is what is known as computer architecture. In this article we’re going to delve into what computer architecture actually is.
+
+Computer architecture is the organisation of the components which make up a computer system and the meaning of the operations which guide its function. It defines what is seen on the machine interface, which is targeted by programming languages and their compilers.
 
 ### **1.2.2 Components of Computer System: Input unit, Output unit, Processing unit, Memory unit and Storage**
 
+A computer comprises of some basic elements. These include hardware, software, programmes, data and connectivity. No computer can function in the absence of these elements. Apart from these elements, a computer system comprises of three basic components. These components are responsible for making computers actually function. Let’s take a look at them in detail.
+
+Every computer system has the following three basic components:
+
+* Input unit
+* Central processing unit
+* Output unit
+
+While there are other components as well, these three are primarily responsible for making a computer function. They must work in complete synergy because that will ensure smooth overall functioning. Hence, we can even call them building blocks of a computer system.
+
+**Input Unit:**
+These components help users enter data and commands into a computer system. Data can be in the form of numbers, words, actions, commands, etc. The main function of input devices is to direct commands and data into computers. Computers then use their CPU to process this data and produce output.
+
+For example, a laptop’s keyboard is an input unit that enters numbers and characters. Similarly, even a mouse can be an input unit for entering directions and commands. Other examples include barcode readers, Magnetic Ink Character Readers (MICR), Optical Character Readers (OCR), etc.
+
+**Output Unit**
+The third and final component of a computer system is the output unit. After processing of data, it is converted into a format which humans can understand. After conversion, the output units displays this data to users.  
+Examples of output devices include monitors, screens, printers and speakers. Thus, output units basically reproduce the data formatted by the computer for users’ benefit.
+
+**Central Processing Unit (CPU)**
+After receiving data and commands from users, a computer system now has to process it according to the instructions provided. Here, it has to rely on a component called the central processing unit. The CPU further uses these three elements:
+
+1. Memory Unit
+
+   Once a user enters data using input devices, the computer system stores this data in its memory unit. This data will now remain here until other components of CPU process it. The memory unit uses a set of pre-programmed instructions to further transmit this data to other parts of the CPU.
+
+2. Arithmetic and Logic Unit
+
+   This part of the CPU performs arithmetic operations. It does basic mathematical calculations like addition, subtraction, division, multiplication, etc. Further, it can even perform logical functions like the comparison of data.
+
+3. Control Unit
+
+   This unit is the backbone of computers. It is responsible for coordinating tasks between all components of a computer system. The control unit collects data from input units and sends it to processing units depending on its nature. Finally, it also further transmits processed data to output units for users.
+
 ### **1.2.3 Microprocessor: basic concepts, clock speed, word length, components and functions**
+
+A Microprocessor is an important part of a computer architecture without which you will not be able to perform anything on your computer. It is a programmable device that takes in input performs some arithmetic and logical operations over it and produces the desired output. In simple words, a Microprocessor is a digital device on a chip that can fetch instructions from memory, decode and execute them and give results.
+
+**Basics of Microprocessor –**
+A Microprocessor takes a bunch of instructions in machine language and executes them, telling the processor what it has to do. Microprocessor performs three basic things while executing the instruction:
+
+>* It performs some basic operations like addition, subtraction, multiplication, division, and some logical operations using its Arithmetic and Logical Unit (ALU). New Microprocessors also perform operations on floating-point numbers also.
+>
+>* Data in microprocessors can move from one location to another.
+>
+>* It has a Program Counter (PC) register that stores the address of the next instruction based on the value of the PC, Microprocessor jumps from one location to another and takes decisions.
+{:.prompt-tip}
+
+**Clock Speed**
+Every microprocessor has an internal clock that regulates the speed at which it executes instructions and also synchronizes it with other components. The speed at which the microprocessor executes instructions is called clock speed. Clock speeds are measured in MHz or GHz where 1 MHz means 1 million cycles per second whereas 1 GHz equals to 1 billion cycles per second. Here cycle refers to single electric signal cycle.
+
+Currently microprocessors have clock speed in the range of 3 GHz, which is maximum that current technology can attain. Speeds more than this generate enough heat to damage the chip itself. To overcome this, manufacturers are using multiple processors working in parallel on a chip.
+
+**Word Size or Word length**
+Number of bits that can be processed by a processor in a single instruction is called its word size. Word size determines the amount of RAM that can be accessed at one go and total number of pins on the microprocessor. Total number of input and output pins in turn determines the architecture of the microprocessor.
+
+First commercial microprocessor Intel 4004 was a 4-bit processor. It had 4 input pins and 4 output pins. Number of output pins is always equal to the number of input pins. Currently most microprocessors use 32-bit or 64-bit architecture.
+
+**Microprocessor Components**
+Compared to the first microprocessors, today’s processors are very small but still they have these basic parts right from the first model −
+
+* CPU
+* Bus
+* Memory
+
+**CPU**
+CPU is fabricated as a very large scale integrated circuit (VLSI) and has these parts −
+
+Instruction register − It holds the instruction to be executed.
+
+Decoder − It decodes (converts to machine level language) the instruction and sends to the ALU (Arithmetic Logic Unit).
+
+ALU − It has necessary circuits to perform arithmetic, logical, memory, register and program sequencing operations.
+
+Register − It holds intermediate results obtained during program processing. Registers are used for holding such results rather than RAM because accessing registers is almost 10 times faster than accessing RAM.
+
+**Bus**
+Connection lines used to connect the internal parts of the microprocessor chip is called bus. There are three types of buses in a microprocessor −
+
+Data Bus − Lines that carry data to and from memory are called data bus. It is a bidirectional bus with width equal to word length of the microprocessor.
+
+Address Bus − It is a unidirectional responsible for carrying address of a memory location or I/O port from CPU to memory or I/O port.
+
+Control Bus − Lines that carry control signals like clock signals, interrupt signal or ready signal are called control bus. They are bidirectional. Signal that denotes that a device is ready for processing is called ready signal. Signal that indicates to a device to interrupt its process is called an interrupt signal.
+
+**Memory**
+Microprocessor has two types of memory
+
+RAM − Random Access Memory is volatile memory that gets erased when power is switched off. All data and instructions are stored in RAM.
+
+ROM − Read Only Memory is non-volatile memory whose data remains intact even after power is switched off. Microprocessor can read from it any time it wants but cannot write to it. It is preprogrammed with most essential data like booting sequence by the manufacturer.
+
+**Functions**
+Among various functions of microprocessor some are as follows
+
+* Controlling all other parts of the machine and sending timing signals.
+* Transferring data between memory and I/O devices
+* Fetching data and instructions from memory
+* Decoding instruction
+* Performing arithmetical and logical operations
+* Executing programs stored in memory
+* Performing communication among the I/O devices etc.
 
 ### **1.2.4 Bus System: data bus, address bus and control bus**
 
-### **1.2.5 Primary Memory: Definition, RAM, ROM, Cache, Buffer, types of RAM and ROM**
+The electrically conducting path along which data is transmitted inside any digital electronic device. A Computer bus consists of a set of parallel conductors, which may be conventional wires, copper tracks on a PRINTED CIRCUIT BOARD, or microscopic aluminum trails on the surface of a silicon chip. Each wire carries just one bit, so the number of wires determines the largest data WORD the bus can transmit: a bus with eight wires can carry only 8- bit data words, and hence defines the device as an 8-bit device.
 
-### **1.2.6 Microprocessor: basic concepts, clock speed, word length, components and functions**
+>* The bus is a communication channel.
+>* The characteristic of the bus is shared transmission media.
+>* The limitation of a bus is only one transmission at a time.
+>* A bus which is used to provide communication between the major components of a computer is called a System bus.
+{:.prompt-tip}
 
-### **1.2.7 Input Devices: Keyboard, Mouse, Scanner, Light Pen, OMR, OCR, BCR, MICR Scanner, Touch Screen, Microphone and Digital Camera**
+**Data Bus**
+A data bus is a computer subsystem that carries the data between the processor and other components. The data bus is bidirectional that allows for the transferring of data from one component to another within a computer system or between two computers.
 
-### **1.2.8 Output Devices: Monitor (LCD, LED), Printer (Dot Matrix, Inkjet, Laser), Speaker**
+This can include transferring data to and from the memory, or from the central processing unit (CPU) to other components. Each one is designed to handle so many bits of data at a time. It is the main part of a system bus that allows the actual transmission of data.
+
+A typical data bus is 32-bits wide. This means that up to 32 bits of data can travel through a data bus every second. Newer computers are making data buses that can handle 64-bit and even 128-bit data paths. At the same time, they are making data buses to handle more bits and can handle those higher bitrates.
+
+**Address Bus**
+An address bus is a computer bus architecture that carries memory addresses from the processor to other components such as primary storage to input/output devices.
+
+The address bus is unidirectional. It is used to transfer data between devices that are identified by the hardware address of the physical memory (the physical address), which is stored in the form of binary numbers to enable the data bus to access memory storage.
+
+The address bus is used by the CPU or direct memory access (DMA) enabled device to locate the physical address to communicate read/write commands. All address busses are read and written by the CPU or DMA in the form of bits.
+
+**Control Bus**
+A control bus is a computer bus that is used to carries control signals from the processor to other components. It also carries the clock’s pulses which are used by the CPU to communicate with devices that are contained within the computer.
+
+In the computer system, the CPU transmits a variety of control signals to components and devices. This occurs through physical connections such as cables or printed circuits.
+
+The control bus is bidirectional and is comprised of interrupt lines, byte enables lines, read/write signals, and status lines.
+
+After data being processed, the control bus carries commands from the CPU and returns status signals from the devices. For example, if the data is being read or written to the device, the appropriate line (read or write) will be active (i.e. logic one).
+
+### **1.2.5 Primary Memory:**
+
+Primary memory is a segment of computer memory that can be accessed directly by the processor. In a hierarchy of memory, primary memory have access time less than secondary memory and greater than cache memory. Generally, primary memory has a storage capacity lesser than secondary memory and greater than cache memory.
+
+This organization of memory in a stepwise manner is known as Memory Hierarchy.
+
+Classification of Primary Memory
+Primary memory can be broadly classified into two parts:
+
+* Read-Only Memory (ROM)
+* Random Access Memory (RAM)
+
+**Read-Only Memory**
+Any data which need not be altered are stored in ROM. ROM includes those programs which run on booting of the system (know as a bootstrap program that initializes OS) along with data like algorithm required by OS. Anything stored in ROM cannot be altered or changed.
+
+**Types of ROM:**
+
+ROM can be broadly classified into 4 types based on their behavior:
+
+* MROM: Masked ROM are hardwired and pre-programmed ROM. Any content that is once written cannot be altered anyhow.
+* PROM: Programmable ROM can be modified once by the user. The user buys a blank PROM and writes the desired content but once written content cannot be altered.
+* EPROM: Erasable and Programmable ROM Content can be changed by erasing the initial content which can be done by exposing EPROM to UV radiation. This exposure to ultra-violet light dissipates the charge on ROM and content can be rewritten on it.
+* EEPROM: Electrically Erasable and Programmable ROM Content can be changed by erasing the initial content which could be easily erased electrically. However, one byte can be erased at a time instead of deleting in one go. Hence, reprogramming of EEPROM is a slow process.
+
+**Random Access Memory**
+Any process in the system which needs to be executed is loaded in RAM which is processed by the CPU as per Instructions in the program. Like if we click on applications like Browser, firstly browser code will be loaded by the Operating system into the RAM after which the CPU will execute and open up the Browser.
+
+**Types of RAM:**
+
+RAM can be broadly classified into SRAM (Static RAM) and DRAM (Dynamic RAM) based on their behavior:
+
+* DRAM: Dynamic RAM or DRAM needs to periodically refresh in few milliseconds to retain data. DRAM is made up of capacitors and transistors and electric charge leaks from capacitors and DRAM needs to be charged periodically. DRAM is widely used in home PCs and servers as it is cheaper than SRAM.
+* SRAM: Static RAM or SRAM keeps the data as long as power is supplied to the system. SRAM uses Sequential circuits like a flip-flop to store a bit and hence need not be periodically refreshed. SRAM is expensive and hence only used where speed is the utmost priority.
+
+**Cache Memory**
+A faster and smaller segment of memory whose access time is as close as registers are known as Cache memory. In a hierarchy of memory, cache memory has access time lesser than primary memory. Generally, cache memory is very smaller and hence is used as a buffer.
+
+Data in primary memory can be accessed faster than secondary memory but still, access times of primary memory are generally in few microseconds, whereas CPU is capable of performing operations in nanoseconds. Due to the time lag between accessing data and acting of data performance of the system decreases as the CPU is not utilized properly, it may remain idle for some time. In order to minimize this time gap new segment of memory is Introduced known as Cache Memory.
+
+**Buffer**
+In computer science, a data buffer (or just buffer) is a region of a memory used to temporarily store data while it is being moved from one place to another. Typically, the data is stored in a buffer as it is retrieved from an input device (such as a microphone) or just before it is sent to an output device (such as speakers). However, a buffer may be used when moving data between processes within a computer. This is comparable to buffers in telecommunication. Buffers can be implemented in a fixed memory location in hardware—or by using a virtual data buffer in software, pointing at a location in the physical memory. In all cases, the data stored in a data buffer are stored on a physical storage medium. A majority of buffers are implemented in software, which typically use the faster RAM to store temporary data, due to the much faster access time compared with hard disk drives. Buffers are typically used when there is a difference between the rate at which data is received and the rate at which it can be processed, or in the case that these rates are variable, for example in a printer spooler or in online video streaming. In the distributed computing environment, data buffer is often implemented in the form of burst buffer that provides distributed buffering service.
+
+### **1.2.6 Secondary Memory:**
+
+You know that processor memory, also known as primary memory, is expensive as well as limited. The faster primary memory are also volatile. If we need to store large amount of data or programs permanently, we need a cheaper and permanent memory. Such memory is called secondary memory. Here we will discuss secondary memory devices that can be used to store large amount of data, audio, video and multimedia files.
+
+**Characteristics of Secondary Memory**
+These are some characteristics of secondary memory, which distinguish it from primary memory −
+
+* It is non-volatile, i.e. it retains data when power is switched off
+* It is large capacities to the tune of terabytes
+* It is cheaper as compared to primary memory
+
+Depending on whether secondary memory device is part of CPU or not, there are two types of secondary memory – `fixed` and `removable`.
+
+**Magnetic Disk**
+A magnetic Disk is a type of secondary memory that is a flat disc covered with a magnetic coating to hold information. It is used to store various programs and files. The polarized information in one direction is represented by 1, and vice versa. The direction is indicated by 0.
+
+![Magnetic Disk](https://media.geeksforgeeks.org/wp-content/uploads/20200428172242/Hard-Disk-Drive-PNG-Pic3-300x225.png)
+
+Magnetic disks are less expensive than RAM and can store large amounts of data, but the data access rate is slower than main memory because of secondary memory. Data can be modified or can be deleted easily in the magnetic disk memory. It also allows random access to data.
+
+**Hard Disk Drive**
+Hard disk drive is made up of a series of circular disks called platters arranged one over the other almost ½ inches apart around a spindle. Disks are made of non-magnetic material like aluminum alloy and coated with 10-20 nm of magnetic material.
+
+![Hard Disk Drive](https://www.tutorialspoint.com/basics_of_computers/images/hard_disk.jpg)
+
+Standard diameter of these disks is 14 inches and they rotate with speeds varying from 4200 rpm (rotations per minute) for personal computers to 15000 rpm for servers. Data is stored by magnetizing or demagnetizing the magnetic coating. A magnetic reader arm is used to read data from and write data to the disks. A typical modern HDD has capacity in terabytes (TB).
+
+**Optical Drive**
+CD stands for Compact Disk. CDs are circular disks that use optical rays, usually lasers, to read and write data. They are very cheap as you can get 700 MB of storage space for less than a dollar. CDs are inserted in CD drives built into CPU cabinet. They are portable as you can eject the drive, remove the CD and carry it with you. There are three types of CDs −
+
+* CD-ROM (Compact Disk – Read Only Memory) − The data on these CDs are recorded by the manufacturer. Proprietary Software, audio or video are released on CD-ROMs.
+* CD-R (Compact Disk – Recordable) − Data can be written by the user once on the CD-R. It cannot be deleted or modified later.
+* CD-RW (Compact Disk – Rewritable) − Data can be written and deleted on these optical disks again and again.
+
+DVD stands for Digital Video Display. DVD are optical devices that can store 15 times the data held by CDs. They are usually used to store rich multimedia files that need high storage capacity. DVDs also come in three varieties – read only, recordable and rewritable.
+
+![DVD Drive](https://www.tutorialspoint.com/basics_of_computers/images/dvd_drive.jpg)
+
+**Flash Memory**
+Flash Memory is a portable memory device that uses solid state memory rather than magnetic fields or lasers to record data. It uses a technology similar to RAM, except that it is nonvolatile. It is also called USB drive, key drive or flash memory or memo stick.
+
+![Pen Drive](https://www.tutorialspoint.com/basics_of_computers/images/pen_drive.jpg)
+
+**External storage**
+More commonly called an external drive, external storage is storage that's not part of the internal parts (external) of a computer. These drives often connect to the computer using USB, eSATA, or FireWire connection
+
+### **1.2.7 Input Devices:**
+
+In computing, an input device is a piece of equipment used to provide data and control signals to an information processing system, such as a computer or information appliance. Examples of input devices include keyboards, mouse, scanners, cameras, joysticks, and microphones.
+
+**Keyboard**
+A keyboard is a human interface device which is represented as a layout of buttons. Each button, or key, can be used to either input an alphanumeric character to a computer, or to call upon a particular function of the computer. It acts as the main text entry interface for most users. Keyboards are available in many form factors, depending on the use case. Standard keyboards can be categorized by its size and number of keys, and the type of switch it employs. Other keyboards cater to specific use cases, such as a numeric keypad or a keyer. Desktop keyboards are typically large, often have full key travel distance, and features such as multimedia keys and a numeric keypad. Keyboards on laptops and tablets typically compromise on comfort to achieve a thin figure.
+
+![Keyboard](https://i.dell.com/is/image/DellContent/content/dam/images/products/electronics-and-accessories/dell/keyboards/kb500/kb500-kbm-02-bk.psd?fmt=pjpg&pscan=auto&scl=1&hei=402&wid=852&qlt=100,1&resMode=sharp2&size=852,402&chrss=full)
+
+**Mouse**
+A Mouse allows a user to input spatial data to a computer. It is commonly used as a simple and intuitive way to select items on a computer screen on a graphical user interface (GUI), either by moving a mouse pointer, or, in the case of a touch screen, by physically touching the item on screen. Common pointing devices include mouse, touchpads, and touch screens.
+
+![Mouse](https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/RWCLVR-Microsoft-Bluetooth-Desktop-content-placement-Black-Microsoft-Wireless-Mobile-Mouse-4000:VP1-539x400)
+
+Whereas mouse operate by detecting their displacement on a surface, analog devices, such as 3D mouse, joysticks, or pointing sticks, function by reporting their angle of deflection.
+
+**Scanner**
+scanner, also called optical scanner, computer input device that uses a light beam to scan codes, text, or graphic images directly into a computer or computer system. Bar-code scanners are used widely at point-of-sale terminals in retail stores. A handheld scanner or bar-code pen is moved across the code, or the code itself is moved by hand across a scanner built into a checkout counter or other surface, and the computer stores or immediately processes the data in the bar code. After identifying the product through its bar code, the computer determines its price and feeds that information into the cash register. Optical scanners are also used in fax machines and to input graphic material directly into personal computers. Flatbed scanners have a top that lifts up, and the operator has to change manually the materials being scanned. Sheetfed scanners can be loaded with multiple loose pages, which are passed over the scanner by rollers.
+
+**Light Pen**
+A light pen is a light-sensitive computer input device, basically a stylus, that is used to select text, draw pictures and interact with user interface elements on a computer screen or monitor. The light pen works well with CRT monitors because of the way such monitors scan the screen, which is one pixel at a time, giving the computer a way to keep track of the expected scanning time by the electron beam and infer the pen's position based on the latest timestamp of the scanning.
+
+**OMR**
+The acronym “OMR” stands for Optical Mark Recognition. This popular and highly accurate recognition technology is used for collecting data from “fill-in-the-bubble” types of questions on student tests, surveys, ballots, assessments, evaluations, and many other types of forms. OMR can be confused with other types of recognition including: OCR (Optical Character Recognition) – reading machine printed characters, and ICR (Intelligent Character Recognition) – reading handwritten characters
+
+![OMR](https://st3.depositphotos.com/6079804/15149/i/600/depositphotos_151497166-stock-photo-optical-mark-recognition-or-omr.jpg)
+
+Optical Mark Recognition enables the respondent to select an answer to a question by filling in a “bubble” or “mark” associated with an answer choice. For instance, in the image on the right the respondent selected Excellent in a box to indicate that the location was Excellent.
+
+**OCR**
+Optical character recognition or optical character reader (OCR) is the electronic or mechanical conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document, a scene-photo (for example the text on signs and billboards in a landscape photo) or from subtitle text superimposed on an image (for example: from a television broadcast).
+
+![OCR](https://www.dataentryoutsourced.com/images/topbannerimg29.webp)
+
+Widely used as a form of data entry from printed paper data records – whether passport documents, invoices, bank statements, computerized receipts, business cards, mail, printouts of static-data, or any suitable documentation – it is a common method of digitizing printed texts so that they can be electronically edited, searched, stored more compactly, displayed on-line, and used in machine processes such as cognitive computing, machine translation, (extracted) text-to-speech, key data and text mining. OCR is a field of research in pattern recognition, artificial intelligence and computer vision.
+
+**BCR**
+The basic B.C.R in computers is Bar Code Reader but there are different forms of BCR in software and in computer assembly language which is Business Card Reader in software and in computer assembly language that is Backspace card reader. BCR stands for Barcode Reader for laptop enter devices. Barcodes are an aggregate of black and white strains. These strains comprise numbers and dates that may be effortlessly studied via the means of a barcode scanner. And these records may be effortlessly entered into your laptop. This is machine-readable code withinside the shape of numbers and strains, which might be basically parallel and are published on all merchandise. Barcode structures have been validated to be very beneficial in all businesses. With the assistance of those huge corporations, costs and stock tiers in their merchandise may be leveled and tracked.
+
+![BCR](https://thumbs.dreamstime.com/b/generic-barcode-scanner-scanning-d-illustration-140775293.jpg)
+
+Widely used as a form of data entry from printed paper data records – whether passport documents, invoices, bank statements, computerized receipts, business cards, mail, printouts of static-data, or any suitable documentation – it is a common method of digitizing printed texts so that they can be electronically edited, searched, stored more compactly, displayed on-line, and used in machine processes such as cognitive computing, machine translation, (extracted) text-to-speech, key data and text mining. OCR is a field of research in pattern recognition, artificial intelligence and computer vision.
+
+**MICR Scanner**
+Magnetic ink character recognition code, known in short as MICR code, is a character recognition technology used mainly by the banking industry to streamline the processing and clearance of cheques and other documents. MICR characters are printed on documents in one of the two MICR fonts, using magnetizable (commonly known as magnetic) ink or toner, usually containing iron oxide. In scanning, the document is passed through a MICR reader, which performs two functions: magnetization of the ink, and detection of the characters. The characters are read by a MICR reader head, a device similar to the playback head of a tape recorder. As each character passes over the head, it produces a unique waveform that can be easily identified by the system.
+
+![MICR Scanner](https://www.magtekeurope.com/product-images/cheque-scanners/imagesafe/magtek-image-safe-cheque-scanner-micr-reader-main.jpg)
+
+MICR readers are the primary tool for cheque sorting and are used across the cheque distribution network at multiple stages. For example, a merchant will use a MICR reader to sort cheques by bank and send the sorted cheques to a clearing house for redistribution to those banks. Upon receipt, the banks perform another MICR sort to determine which customer's account is charged and to which branch the cheque should be sent on its way back to the customer. However, many banks no longer offer this last step of returning the cheque to the customer. Instead, cheques are scanned and stored digitally. Sorting of cheques is done as per the geographical coverage of banks in a nation.
+
+**Touch Screen**
+A touchscreen or touch screen is the assembly of both an input ('touch panel') and output ('display') device. The touch panel is normally layered on the top of an electronic visual display of an information processing system. The display is often an LCD, AMOLED or OLED display while the system is usually used in a laptop, tablet, or smartphone. A user can give input or control the information processing system through simple or multi-touch gestures by touching the screen with a special stylus or one or more fingers.[1] Some touchscreens use ordinary or specially coated gloves to work while others may only work using a special stylus or pen. The user can use the touchscreen to react to what is displayed and, if the software allows, to control how it is displayed; for example, zooming to increase the text size.
+
+**Microphone**
+A microphone, colloquially called a mic or mike is a transducer that converts sound into an electrical signal. Microphones are used in many applications such as telephones, hearing aids, public address systems for concert halls and public events, motion picture production, live and recorded audio engineering, sound recording, two-way radios, megaphones, and radio and television broadcasting. They are also used in computers for recording voice, speech recognition, VoIP, and for other purposes such as ultrasonic sensors or knock sensors.
+
+![Microphone](https://img.freepik.com/free-vector/realistic-single-silver-microphone-retro-design-with-black-switch_1284-33542.jpg?w=2000)
+
+Several types of microphone are used today, which employ different methods to convert the air pressure variations of a sound wave to an electrical signal. The most common are the dynamic microphone, which uses a coil of wire suspended in a magnetic field; the condenser microphone, which uses the vibrating diaphragm as a capacitor plate; and the contact microphone, which uses a crystal of piezoelectric material. Microphones typically need to be connected to a preamplifier before the signal can be recorded or reproduced.
+
+**Digital Camera**
+A digital camera is a camera that captures photographs in digital memory. Most cameras produced today are digital, largely replacing those that capture images on photographic film. Digital cameras are now widely incorporated into mobile devices like smartphones with the same or more capabilities and features of dedicated cameras (which are still available). High-end, high-definition dedicated cameras are still commonly used by professionals and those who desire to take higher-quality photographs.
+
+![Digital Camera](https://pyxis.nymag.com/v1/imgs/4d9/f5d/17a5c85b0bdfdafc38a33cd36332cb6184-3----.rhorizontal.w600.jpg)
+
+Digital and digital movie cameras share an optical system, typically using a lens with a variable diaphragm to focus light onto an image pickup device. The diaphragm and shutter admit a controlled amount of light to the image, just as with film, but the image pickup device is electronic rather than chemical. However, unlike film cameras, digital cameras can display images on a screen immediately after being recorded, and store and delete images from memory. Many digital cameras can also record moving videos with sound. Some digital cameras can crop and stitch pictures and perform other elementary image editing.
+
+### **1.2.8 Output Devices: , Printer (Dot Matrix, Inkjet, Laser), Speaker**
+
+An output device is any piece of computer hardware equipment which converts information into a human-perceptible form or, historically, into a physical machine-readable form for use with other non-computerized equipment. It can be text, graphics, tactile, audio, or video. Examples include monitors, printers, speakers, headphones, projectors etc.
+
+**Monitor (LCD, LED)**
+A monitor is a standalone display commonly used with a desktop computer, or in conjunction to a laptop as an external display. The monitor is connected to the host through the use of a display cable, such as HDMI, DisplayPort, VGA, and more.
+
+Older monitors use CRT technology, while modern monitors are typically flat panel displays using a plethora of technologies such as TFT-LCD, LED, OLED, and more.
+
+**LCD**  
+A liquid-crystal display (LCD) is a flat-panel display or other electronically modulated optical device that uses the light-modulating properties of liquid crystals combined with polarizers. Liquid crystals do not emit light directly but instead use a backlight or reflector to produce images in color or monochrome. LCDs are available to display arbitrary images (as in a general-purpose computer display) or fixed images with low information content, which can be displayed or hidden. For instance: preset words, digits, and seven-segment displays, as in a digital clock, are all good examples of devices with these displays. They use the same basic technology, except that arbitrary images are made from a matrix of small pixels, while other displays have larger elements. LCDs can either be normally on (positive) or off (negative), depending on the polarizer arrangement. For example, a character positive LCD with a backlight will have black lettering on a background that is the color of the backlight, and a character negative LCD will have a black background with the letters being of the same color as the backlight. Optical filters are added to white on blue LCDs to give them their characteristic appearance.
+
+**LED**  
+A LED display is a flat panel display that uses an array of light-emitting diodes as pixels for a video display. Their brightness allows them to be used outdoors where they are visible in the sun for store signs and billboards. In recent years, they have also become commonly used in destination signs on public transport vehicles, as well as variable-message signs on highways. LED displays are capable of providing general illumination in addition to visual display, as when used for stage lighting or other decorative (as opposed to informational) purposes. LED displays can offer higher contrast ratios than a projector and are thus an alternative to traditional projection screens, and they can be used for large, uninterrupted (without a visible grid arising from the bezels of individual displays) video walls. microLED displays are LED displays with smaller LEDs, which poses significant development challenges.
 
 ### **1.2.9 Hardware Interfaces: Parallel Port, Serial Port, USB Ports, HDMI and Expansion Slots**
 
