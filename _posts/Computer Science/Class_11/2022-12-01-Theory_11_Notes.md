@@ -1040,27 +1040,53 @@ The `XNOR` (`exclusive-NOR`) gate is a combination `XOR` gate followed by an inv
 |   T   |   F   |          T          |                              F                              |
 |   T   |   T   |          F          |                              T                              |
 
-### 2.2.4 Lasws of Boolean Algebra - Boolean Identities, Complement Laws, Identity Commutative, Associative and Distributive Laws
+### 2.2.4 Lasws of Boolean Algebra
 
 Like normal algebra, Boolean algebra has several beneficial identities. An "identity" is merely a relationship that is always true, regardless of the values that any variables involved might take on; similar to laws or properties. Many of these can be analogous to normal multiplication and addition, particularly when the symbols {0,1} are used for {FALSE, TRUE}. However, while this can be useful, some identities are different and that causes confusion for many people. We will be sure to highlight these as we encounter them.
 
-To begin with, Table summarizes these identities, outlines the expressions, and then examines each in detail.
+To begin with, Table below summarizes these identities, outlines the expressions, and then examines each in detail.
 
 Boolean Identities
 
-|     IDENTITY      |                      EXPRESSION                                                                  ||
-|:------------------|:-----------------------:|:-----------------------------------------------------------------------:|
-| Logical Inverse   |         $ \overline 0 = 1; \overline 1 = 0$                                                       |
-| Involution        |         $ \overline{\overline A} = A $                                                            |
-|                   |          **OR**                                 |               **AND**                           |
-| Dominance         | $A + 1 = 1$                                     | $A \dot\ 0 = 0$                                 |
-| Identity          | $A + 0 = A$                                     | $A \dot\ 1 = A$                                 |
-| Idempotence       | $A + A = A$                                     | $A \dot\ A = A$                                 |
-| Complementarity   | $A + \overline A = 1$                           | $A \dot\ {\overline A} = 0$                     |
-| Commutativity     | $A + B = B + A$                                 | $A \dot\ B = B \dot\ A$                         |
-| Associativity     | $(A + B) + C = A + (B + C)$                     | $(A \dot\ B) \dot\ C = A \dot\ (B \dot\ C)$     |
-| Distributivity    | $A + (B \dot\ C) = (A + B) \dot\ (A + C)$       | $A \dot\ (B + C) = (A \dot\ B) + (A \dot\ C)$   |
-| Absorption        | $A \dot\ (A + B) = A$                           | $A \dot\ (A + B) = A$                           |
-| DeMorgan's        | $A + B = A \dot\ B$                             | $A \dot\ B = A + B$                             |
+|     IDENTITY      |                      EXPRESSION                                                                            ||
+|:------------------|:---------------------------------------------------:|:-----------------------------------------------------:|
+| Logical Inverse   |         $ \overline 0 = 1; \overline 1 = 0$                                                                 |
+| Involution        |         $ \overline{\overline A} = A $                                                                      |
+|                   |          **OR**                                     |               **AND**                                 |
+| Dominance         | $A + 1 = 1$                                         | $A \dot\ 0 = 0$                                       |
+| Identity          | $A + 0 = A$                                         | $A \dot\ 1 = A$                                       |
+| Idempotence       | $A + A = A$                                         | $A \dot\ A = A$                                       |
+| Complement        | $A + \overline A = 1$                               | $A \dot\ {\overline A} = 0$                           |
+| Commutative       | $A + B = B + A$                                     | $A \dot\ B = B \dot\ A$                               |
+| Associative       | $(A + B) + C = A + (B + C)$                         | $(A \dot\ B) \dot\ C = A \dot\ (B \dot\ C)$           |
+| Distributive      | $A + (B \dot\ C) = (A + B) \dot\ (A + C)$           | $A \dot\ (B + C) = (A \dot\ B) + (A \dot\ C)$         |
+| Absorption        | $A \dot\ (A + B) = A$                               | $A \dot\ (A + B) = A$                                 |
+| DeMorgan's        | $\overline{A + B} = \overline A \dot\ \overline B$  | $ \overline{A \dot\ B} = \overline A + \overline B$   |
 
 ### 2.2.5 Statement and Verification of Laws of Boolean algebra using truth table
+
+### DeMorgan's Law Verification
+
+**Statement:** Demorgan's law says the complement of addition (OR operation) of two boolean variables are the product (AND operation) of the complement of individual variable. Mathematically,  
+$\overline{A + B} = \overline A \dot\ \overline B$
+
+|  $A$  |  $B$  |  $\overline A$  |  $\overline B$  | $A + B$  | $\overline{A + B}$  |  $\overline A \dot\ \overline B$  |
+|:-----:|:-----:|:---------------:|:---------------:|:--------:|:-------------------:|:---------------------------------:|
+|   F   |   F   |        T        |        T        |    F     |          T          |                T                  |
+|   F   |   T   |        T        |        F        |    T     |          F          |                F                  |
+|   T   |   F   |        F        |        T        |    T     |          F          |                F                  |
+|   T   |   T   |        F        |        F        |    T     |          F          |                F                  |
+
+Here from the above table it is evident that $\overline{A + B} = \overline A \dot\ \overline B$
+
+**Statement:** Demorgan's law also says the complement of product (AND operation) of two boolean variables are the addition (OR operation) of the complement of individual variable. Mathematically,  
+$ \overline{A \dot\ B} = \overline A + \overline B$
+
+|  $A$  |  $B$  |  $\overline A$  |  $\overline B$  | $A \dot\ B$  | $\overline{A \dot\ B}$  |  $\overline A + \overline B$  |
+|:-----:|:-----:|:---------------:|:---------------:|:------------:|:-----------------------:|:-----------------------------:|
+|   F   |   F   |        T        |        T        |      F       |            T            |              T                |
+|   F   |   T   |        T        |        F        |      F       |            T            |              T                |
+|   T   |   F   |        F        |        T        |      F       |            T            |              T                |
+|   T   |   T   |        F        |        F        |      T       |            F            |              F                |
+
+Here from the above table it is evident that $ \overline{A \dot\ B} = \overline A + \overline B$
