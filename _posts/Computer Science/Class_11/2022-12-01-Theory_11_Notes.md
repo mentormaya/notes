@@ -1048,103 +1048,19 @@ To begin with, Table summarizes these identities, outlines the expressions, and 
 
 Boolean Identities
 
-|     IDENTITY      |                      EXPRESSION                      ||
-|:------------------|:-----------------------:|:---------------------------:|
-| Logical Inverse   |         $ \overline 0 = 1; \overline 1 = 0$           |
-| Involution        |         $ \overline{\overline A} = A $                |
-|                   |        **OR**           |         **AND**             |
-| Dominance         |      $A + 1 = 1$        |      $A \dot\ 0 = 0$        |
-| Identity          |      $A + 0 = A$        |      $A \dot\ 1 = A$        |
-| Idempotence       |      $A + A = A$        |      $A \dot\ A = A$        |
-| Complementarity   |  $A + \overline A = 1$  | $A \dot\ {\overline A} = 0$ |
-| Commutativity     |     $A + B = B + A$     |   $A \dot\ B = B \dot\ A$   |
-| Associativity     | (A + B) + C = A + (B + C) | $(A \dot\ B) \dot\ C = A \dot\ (B \dot\ C) |
-
-Distributivity
-
-A
-+
-(
-B
-⋅
-C
-)
-=
-(
-A
-+
-B
-)
-⋅
-(
-A
-+
-C
-)
- 
-A
-⋅
-(
-B
-+
-C
-)
-=
-(
-A
-⋅
-B
-)
-+
-(
-A
-⋅
-C
-)
-Absorption
-
-A
-⋅
-(
-A
-+
-B
-)
-=
-A
- 
-A
-⋅
-(
-A
-+
-B
-)
-=
-A
-DeMorgan's
-
- 
-A
-+
-B
-=
-¯¯¯¯¯¯¯¯¯¯¯
-¯¯¯¯
-A
-⋅
-¯¯¯¯
-B
-A
-⋅
-B
-=
-¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-¯¯¯¯
-A
-+
-¯¯¯¯
-B
- 
+|     IDENTITY      |                      EXPRESSION                                                                  ||
+|:------------------|:-----------------------:|:-----------------------------------------------------------------------:|
+| Logical Inverse   |         $ \overline 0 = 1; \overline 1 = 0$                                                       |
+| Involution        |         $ \overline{\overline A} = A $                                                            |
+|                   |          **OR**                                 |               **AND**                           |
+| Dominance         | $A + 1 = 1$                                     | $A \dot\ 0 = 0$                                 |
+| Identity          | $A + 0 = A$                                     | $A \dot\ 1 = A$                                 |
+| Idempotence       | $A + A = A$                                     | $A \dot\ A = A$                                 |
+| Complementarity   | $A + \overline A = 1$                           | $A \dot\ {\overline A} = 0$                     |
+| Commutativity     | $A + B = B + A$                                 | $A \dot\ B = B \dot\ A$                         |
+| Associativity     | $(A + B) + C = A + (B + C)$                     | $(A \dot\ B) \dot\ C = A \dot\ (B \dot\ C)$     |
+| Distributivity    | $A + (B \dot\ C) = (A + B) \dot\ (A + C)$       | $A \dot\ (B + C) = (A \dot\ B) + (A \dot\ C)$   |
+| Absorption        | $A \dot\ (A + B) = A$                           | $A \dot\ (A + B) = A$                           |
+| DeMorgan's        | $A + B = A \dot\ B$                             | $A \dot\ B = A + B$                             |
 
 ### 2.2.5 Statement and Verification of Laws of Boolean algebra using truth table
