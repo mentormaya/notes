@@ -927,20 +927,224 @@ A truth table has one column for each input variable (for example, P and Q), and
 ### 2.2.3 Logic Gates - AND, OR, NOT, NAND, NOR, XOR and XNOR
 
 **AND**  
-Logical conjunction is an operation on two logical values, typically the values of two propositions, that produces a value of true if both of its operands are true.
+The `AND` gate is so named because, if `0` is called `false` and `1` is called `true`, the gate acts in the same way as the logical `and` operator. The following illustration and table show the circuit symbol and logic combinations for an AND gate. (In the symbol, the input terminals are at left and the output terminal is at right.) The output is `true` when both inputs are `true`. Otherwise, the output is `false`. In other words, the output is `1` only when both inputs $A$ `AND` $B$ are `1`.
 
-The truth table for p AND q (also written as p ∧ q, Kpq, p & q, or p.q) is as follows:
+![AND Gate](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/AND_ANSI_Labelled.svg/1920px-AND_ANSI_Labelled.svg.png)
 
-Logical conjunction
-p	q	p ∧ q
-T	T	T
-T	F	F
-F	T	F
-F	F	F
-In ordinary language terms, if both p and q are true, then the conjunction p ∧ q is true. For all other assignments of logical values to p and to q the conjunction p ∧ q is false.
+`AND` Operation truth table:
 
-It can also be said that if p, then p ∧ q is q, otherwise p ∧ q is p.
+|  $A$  |  $B$  |$$Q = A \cap\ B$$ |
+|:-----:|:-----:|:-------------------:|
+|   F   |   F   |          F          |
+|   F   |   T   |          F          |
+|   T   |   F   |          F          |
+|   T   |   T   |          T          |
+
+In ordinary language terms, if both $A$ and $B$ are `true`, then the conjunction $$A \cap\ B$$ is `true`. For all other assignments of logical values to $A$ and to $B$ the conjunction $$A \cap\ B$$ is false.
+
+It can also be said that if $A$, then $$A \cap\ B$$ is $B$, otherwise $$A \cap\ B$$ is $A$.
+
+**OR**  
+The `OR` gate gets its name from the fact that it behaves after the fashion of the logical inclusive `or`. The output is `true` if either or both of the inputs are `true`. If both inputs are `false`, then the output is `false`. In other words, for the output to be `1`, at least input $A$ `OR` $B$ must be `1`.
+
+![OR Gate](https://isaaccomputerscience.org/api/v3.3.1/api/images/content/computer_science/computer_systems/boolean_logic/figures/isaac_cs_sys_bool_or_gate.svg)
+
+`OR` Operation truth table
+
+|  $A$  |  $B$  |$$Q = A \cup\ B$$ |
+|:-----:|:-----:|:-------------------:|
+|   F   |   F   |          F          |
+|   F   |   T   |          T          |
+|   T   |   F   |          T          |
+|   T   |   T   |          T          |
+
+**NOT**  
+A logical inverter, sometimes called a `NOT` gate to differentiate it from other types of electronic inverter devices, has only one input. It reverses the logic state. If the input is `1`, then the output is `0`. If the input is `0`, then the output is `1`.
+
+![NOT Gate](data:image/png;base64,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)
+
+`NOT` Operation truth table
+
+|  $A$  | $Q = \overline A$ |
+|:-----:|:-----------------:|
+|   F   |         T         |
+|   T   |         T         |
+
+**NAND**  
+The `NAND` gate operates as an `AND` gate followed by a `NOT` gate. It acts in the manner of the logical operation `and` followed by negation. The output is `false` if both inputs are `true`. Otherwise, the output is `true`.
+
+![NAND Gate](https://electricalvoice.com/wp-content/uploads/2018/10/nand-gate-symbol.jpg)
+
+`NAND` Operation truth table
+
+|  $A$  |  $B$  |  $$X = A \dot\ B$$  |  $$Y = \overline X = \overline {A \dot\ B}$$  |
+|:-----:|:-----:|:-------------------:|:---------------------------------------------:|
+|   F   |   F   |          F          |                       T                       |
+|   F   |   T   |          F          |                       T                       |
+|   T   |   F   |          F          |                       T                       |
+|   T   |   T   |          T          |                       F                       |
+
+**NOR**  
+The `NOR` gate is a combination `OR` gate followed by an inverter. Its output is `true` if both inputs are `false`. Otherwise, the output is `false`.
+
+![NOR Gate](https://www.vedantu.com/question-sets/7a72cb46-cbab-4abd-a985-8d98e25376f45202838146996873284.png)
+
+`NOR` Operation truth table
+
+|  $A$  |  $B$  |    $$X = A + B$$    |   $$Y = \overline X = \overline {A + B}$$     |
+|:-----:|:-----:|:-------------------:|:---------------------------------------------:|
+|   F   |   F   |          F          |                       T                       |
+|   F   |   T   |          T          |                       F                       |
+|   T   |   F   |          T          |                       F                       |
+|   T   |   T   |          T          |                       F                       |
+
+**NOR**  
+The `NOR` gate is a combination `OR` gate followed by an inverter. Its output is `true` if both inputs are `false`. Otherwise, the output is `false`.
+
+![NOR Gate](https://www.vedantu.com/question-sets/7a72cb46-cbab-4abd-a985-8d98e25376f45202838146996873284.png)
+
+`NOR` Operation truth table
+
+|  $A$  |  $B$  |    $$X = A + B$$    |   $$Y = \overline X = \overline {A + B}$$     |
+|:-----:|:-----:|:-------------------:|:---------------------------------------------:|
+|   F   |   F   |          F          |                       T                       |
+|   F   |   T   |          T          |                       F                       |
+|   T   |   F   |          T          |                       F                       |
+|   T   |   T   |          T          |                       F                       |
+
+**XOR**  
+The `XOR` ( `exclusive-OR` ) gate acts in the same way as the logical `either/or`. The output is `true` if either, but not both, of the inputs are `true`. The output is `false` if both inputs are `false` or if both inputs are `true`. Another way of looking at this circuit is to observe that the output is `1` if the inputs are different, but 0 if the inputs are the same.
+
+![XOR Gate](https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/XOR_ANSI.svg/1280px-XOR_ANSI.svg.png)
+
+`XOR` Operation truth table
+
+|  $A$  |  $B$  | $$X = A \oplus B$$  |
+|:-----:|:-----:|:-------------------:|
+|   F   |   F   |          F          |
+|   F   |   T   |          T          |
+|   T   |   F   |          T          |
+|   T   |   T   |          F          |
+
+**XNOR**  
+The `XNOR` (`exclusive-NOR`) gate is a combination `XOR` gate followed by an inverter. Its output is `true` if the inputs are the same, and `false` if the inputs are different.
+
+![XNOR Gate](https://cdn1.byjus.com/wp-content/uploads/2020/11/Basic-Logic-Gates.png)
+
+`XNOR` Operation truth table
+
+|  $A$  |  $B$  | $$X = A \oplus B$$  | $$Y = {A \odot B} = \overline X = \overline {A \oplus B}$$  |
+|:-----:|:-----:|:-------------------:|:-----------------------------------------------------------:|
+|   F   |   F   |          F          |                              T                              |
+|   F   |   T   |          T          |                              F                              |
+|   T   |   F   |          T          |                              F                              |
+|   T   |   T   |          F          |                              T                              |
 
 ### 2.2.4 Lasws of Boolean Algebra - Boolean Identities, Complement Laws, Identity Commutative, Associative and Distributive Laws
+
+Like normal algebra, Boolean algebra has several beneficial identities. An "identity" is merely a relationship that is always true, regardless of the values that any variables involved might take on; similar to laws or properties. Many of these can be analogous to normal multiplication and addition, particularly when the symbols {0,1} are used for {FALSE, TRUE}. However, while this can be useful, some identities are different and that causes confusion for many people. We will be sure to highlight these as we encounter them.
+
+To begin with, Table summarizes these identities, outlines the expressions, and then examines each in detail.
+
+Boolean Identities
+
+|     IDENTITY      |                      EXPRESSION                      ||
+|:------------------|:-----------------------:|:---------------------------:|
+| Logical Inverse   |         $ \overline 0 = 1; \overline 1 = 0$           |
+| Involution        |         $ \overline{\overline A} = A $                |
+|                   |        **OR**           |         **AND**             |
+| Dominance         |      $A + 1 = 1$        |      $A \dot\ 0 = 0$        |
+| Identity          |      $A + 0 = A$        |      $A \dot\ 1 = A$        |
+| Idempotence       |      $A + A = A$        |      $A \dot\ A = A$        |
+| Complementarity   |  $A + \overline A = 1$  | $A \dot\ {\overline A} = 0$ |
+| Commutativity     |     $A + B = B + A$     |   $A \dot\ B = B \dot\ A$   |
+| Associativity     | (A + B) + C = A + (B + C) | $(A \dot\ B) \dot\ C = A \dot\ (B \dot\ C) |
+
+Distributivity
+
+A
++
+(
+B
+⋅
+C
+)
+=
+(
+A
++
+B
+)
+⋅
+(
+A
++
+C
+)
+ 
+A
+⋅
+(
+B
++
+C
+)
+=
+(
+A
+⋅
+B
+)
++
+(
+A
+⋅
+C
+)
+Absorption
+
+A
+⋅
+(
+A
++
+B
+)
+=
+A
+ 
+A
+⋅
+(
+A
++
+B
+)
+=
+A
+DeMorgan's
+
+ 
+A
++
+B
+=
+¯¯¯¯¯¯¯¯¯¯¯
+¯¯¯¯
+A
+⋅
+¯¯¯¯
+B
+A
+⋅
+B
+=
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+¯¯¯¯
+A
++
+¯¯¯¯
+B
+ 
 
 ### 2.2.5 Statement and Verification of Laws of Boolean algebra using truth table
