@@ -933,12 +933,12 @@ The `AND` gate is so named because, if `0` is called `false` and `1` is called `
 
 `AND` Operation truth table:
 
-| $A$ | $B$ |  $Q = A \cap\ B$  |
-|:---:|:---:|:-----------------:|
-|  F  |  F  |         F         |
-|  F  |  T  |         F         |
-|  T  |  F  |         F         |
-|  T  |  T  |         T         |
+| $A$ | $B$ | $Q = A \cap\ B$ |
+|:---:|:---:|:---------------:|
+|  F  |  F  |        F        |
+|  F  |  T  |        F        |
+|  T  |  F  |        F        |
+|  T  |  T  |        T        |
 
 In ordinary language terms, if both $A$ and $B$ are `true`, then the conjunction $A \cap\ B$ is `true`. For all other assignments of logical values to $A$ and to $B$ the conjunction $A \cap\ B$ is false.
 
@@ -952,11 +952,11 @@ The `OR` gate gets its name from the fact that it behaves after the fashion of t
 `OR` Operation truth table
 
 | $A$ | $B$ | $Q = A \cup\ B$ |
-|:---:|:---:|:-----------------:|
-|  F  |  F  |         F         |
-|  F  |  T  |         T         |
-|  T  |  F  |         T         |
-|  T  |  T  |         T         |
+|:---:|:---:|:---------------:|
+|  F  |  F  |        F        |
+|  F  |  T  |        T        |
+|  T  |  F  |        T        |
+|  T  |  T  |        T        |
 
 **NOT**  
 A logical inverter, sometimes called a `NOT` gate to differentiate it from other types of electronic inverter devices, has only one input. It reverses the logic state. If the input is `1`, then the output is `0`. If the input is `0`, then the output is `1`.
@@ -978,11 +978,11 @@ The `NAND` gate operates as an `AND` gate followed by a `NOT` gate. It acts in t
 `NAND` Operation truth table
 
 | $A$ | $B$ | $X = A \dot\ B$ | $Y = \overline X = \overline {A \dot\ B}$ |
-|:---:|:---:|:-----------------:|:-------------------------------------------:|
-|  F  |  F  |         F         |                      T                      |
-|  F  |  T  |         F         |                      T                      |
-|  T  |  F  |         F         |                      T                      |
-|  T  |  T  |         T         |                      F                      |
+|:---:|:---:|:---------------:|:-----------------------------------------:|
+|  F  |  F  |        F        |                     T                     |
+|  F  |  T  |        F        |                     T                     |
+|  T  |  F  |        F        |                     T                     |
+|  T  |  T  |        T        |                     F                     |
 
 **NOR**  
 The `NOR` gate is a combination `OR` gate followed by an inverter. Its output is `true` if both inputs are `false`. Otherwise, the output is `false`.
@@ -992,11 +992,11 @@ The `NOR` gate is a combination `OR` gate followed by an inverter. Its output is
 `NOR` Operation truth table
 
 | $A$ | $B$ | $X = A + B$ | $Y = \overline X = \overline {A + B}$ |
-|:---:|:---:|:-------------:|:---------------------------------------:|
-|  F  |  F  |       F       |                    T                    |
-|  F  |  T  |       T       |                    F                    |
-|  T  |  F  |       T       |                    F                    |
-|  T  |  T  |       T       |                    F                    |
+|:---:|:---:|:-----------:|:-------------------------------------:|
+|  F  |  F  |      F      |                   T                   |
+|  F  |  T  |      T      |                   F                   |
+|  T  |  F  |      T      |                   F                   |
+|  T  |  T  |      T      |                   F                   |
 
 **NOR**  
 The `NOR` gate is a combination `OR` gate followed by an inverter. Its output is `true` if both inputs are `false`. Otherwise, the output is `false`.
@@ -1006,11 +1006,11 @@ The `NOR` gate is a combination `OR` gate followed by an inverter. Its output is
 `NOR` Operation truth table
 
 | $A$ | $B$ | $X = A + B$ | $Y = \overline X = \overline {A + B}$ |
-|:---:|:---:|:-------------:|:---------------------------------------:|
-|  F  |  F  |       F       |                    T                    |
-|  F  |  T  |       T       |                    F                    |
-|  T  |  F  |       T       |                    F                    |
-|  T  |  T  |       T       |                    F                    |
+|:---:|:---:|:-----------:|:-------------------------------------:|
+|  F  |  F  |      F      |                   T                   |
+|  F  |  T  |      T      |                   F                   |
+|  T  |  F  |      T      |                   F                   |
+|  T  |  T  |      T      |                   F                   |
 
 **XOR**  
 The `XOR` ( `exclusive-OR` ) gate acts in the same way as the logical `either/or`. The output is `true` if either, but not both, of the inputs are `true`. The output is `false` if both inputs are `false` or if both inputs are `true`. Another way of looking at this circuit is to observe that the output is `1` if the inputs are different, but 0 if the inputs are the same.
@@ -1020,11 +1020,11 @@ The `XOR` ( `exclusive-OR` ) gate acts in the same way as the logical `either/or
 `XOR` Operation truth table
 
 | $A$ | $B$ | $X = A \oplus B$ |
-|:---:|:---:|:------------------:|
-|  F  |  F  |         F          |
-|  F  |  T  |         T          |
-|  T  |  F  |         T          |
-|  T  |  T  |         F          |
+|:---:|:---:|:----------------:|
+|  F  |  F  |        F         |
+|  F  |  T  |        T         |
+|  T  |  F  |        T         |
+|  T  |  T  |        F         |
 
 **XNOR**  
 The `XNOR` (`exclusive-NOR`) gate is a combination `XOR` gate followed by an inverter. Its output is `true` if the inputs are the same, and `false` if the inputs are different.
@@ -1034,11 +1034,11 @@ The `XNOR` (`exclusive-NOR`) gate is a combination `XOR` gate followed by an inv
 `XNOR` Operation truth table
 
 | $A$ | $B$ | $X = A \oplus B$ | $Y = {A \odot B} = \overline X = \overline {A \oplus B}$ |
-|:---:|:---:|:------------------:|:----------------------------------------------------------:|
-|  F  |  F  |         F          |                             T                              |
-|  F  |  T  |         T          |                             F                              |
-|  T  |  F  |         T          |                             F                              |
-|  T  |  T  |         F          |                             T                              |
+|:---:|:---:|:----------------:|:--------------------------------------------------------:|
+|  F  |  F  |        F         |                            T                             |
+|  F  |  T  |        T         |                            F                             |
+|  T  |  F  |        T         |                            F                             |
+|  T  |  T  |        F         |                            T                             |
 
 ### 2.2.4 Lasws of Boolean Algebra
 
@@ -1050,8 +1050,8 @@ Boolean Identities
 
 |     IDENTITY      |                      EXPRESSION                                                                            ||
 |:------------------|:---------------------------------------------------:|:-----------------------------------------------------:|
-| Logical Inverse   |         $\overline 0 = 1; \overline 1 = 0$                                                                 |
-| Involution        |         $\overline{\overline A} = A$                                                                      |
+| Logical Inverse   |         $\overline 0 = 1; \overline 1 = 0$                                                                  |
+| Involution        |         $\overline{\overline A} = A$                                                                        |
 |                   |          **OR**                                     |               **AND**                                 |
 | Dominance         | $A + 1 = 1$                                         | $A \dot\ 0 = 0$                                       |
 | Identity          | $A + 0 = A$                                         | $A \dot\ 1 = A$                                       |
@@ -1061,7 +1061,7 @@ Boolean Identities
 | Associative       | $(A + B) + C = A + (B + C)$                         | $(A \dot\ B) \dot\ C = A \dot\ (B \dot\ C)$           |
 | Distributive      | $A + (B \dot\ C) = (A + B) \dot\ (A + C)$           | $A \dot\ (B + C) = (A \dot\ B) + (A \dot\ C)$         |
 | Absorption        | $A \dot\ (A + B) = A$                               | $A \dot\ (A + B) = A$                                 |
-| DeMorgan's        | $\overline{A + B} = \overline A \dot\ \overline B$  | $\overline{A \dot\ B} = \overline A + \overline B$   |
+| DeMorgan's        | $\overline{A + B} = \overline A \dot\ \overline B$  | $\overline{A \dot\ B} = \overline A + \overline B$    |
 
 ### 2.2.5 Statement and Verification of Laws of Boolean algebra using truth table
 
