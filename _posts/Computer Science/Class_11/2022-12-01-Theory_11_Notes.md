@@ -735,7 +735,7 @@ A few examples of binary additions are as follows:
 Example 1: 10001 + 11101
 Solution:
 
-```
+```text
             1  Carry
       1 0 0 0 1
   (+) 1 1 1 0 1
@@ -747,7 +747,7 @@ Example 2: 10111 + 110001
 
 Solution:
 
-```
+```text
               1 1 1  Carry
             1 0 1 1 1
       (+) 1 1 0 0 0 1
@@ -765,7 +765,7 @@ When you subtract several columns of binary digits, you must take into account t
 
 **Rules and tricks**: Binary subtraction is much easier than the decimal subtraction when you remember the following rules:
 
-```
+```text
 0 – 0 = 0
 0 – 1 = 1 ( with a borrow of 1)
 1 – 0 = 1
@@ -782,7 +782,7 @@ Step 1: First consider the 1’s column, and subtract the one’s column,( 0 –
 
 Step 2: After borrowing 1 from the 10’s column, the value 1 in the 10’s column is changed into the value 0
 
-```
+```text
       1 Borrow
   1 0 1 0
 (-) 1 0 1
@@ -792,7 +792,7 @@ Step 2: After borrowing 1 from the 10’s column, the value 1 in the 10’s colu
 
 Step 3: So, subtract the value in the 10’s place, ( 0 – 0 ) = 0.
 
-```
+```text
       1 Borrow
   1 0 1 0
 (-) 1 0 1
@@ -802,7 +802,7 @@ Step 3: So, subtract the value in the 10’s place, ( 0 – 0 ) = 0.
 
 Step 4: Now subtract the values in 100’s place. Borrow 1 from the 1000’s place ( 0 – 1 ) = 1.
 
-```
+```text
   1   1 Borrow
   1 0 1 0
 (-) 1 0 1
@@ -839,7 +839,7 @@ $(1 0 0 1 0 1)_{2}$ = $3710_{10}$ – subtrahend
 
 Now take the 1’s complement of the subtrahend and add with minuend.
 
-```
+```text
     1 carry
     1 1 0 1 0 1
 (+) 0 1 1 0 1 0
@@ -870,7 +870,7 @@ The numbers of bits in the subtrahend is 5 while that of minuend is 6. We make t
 
 Now, 2’s complement of `010110` is (`101101` + `1`) i.e.`101010`. Adding this with the minuend.
 
-```
+```text
                   1 1 0 1 1 0      Minuend
               (+) 1 0 1 0 1 0      2’s complement of subtrahend
               ——————————————————
@@ -885,7 +885,7 @@ Solution:
 
 2’s complement of `11010` is `(00101 + 1)` i.e. `00110`. Hence
 
-```
+```text
                       Minued -          1 0 1 1 0
 2’s complement of subtrahend -          0 0 1 1 0
 ————————————————————————————————————————————————————
