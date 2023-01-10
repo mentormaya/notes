@@ -123,17 +123,17 @@ So, if there is any device that can store one binary digit (whether 0 or 1), its
 As you have seen in the example above, each character requires 8 bits which are 1 byte. So, 1 character requires 1-byte space. Now, if you have a text file whose size is 32 bytes, it means there are 32 x 8 binary digits (0s and 1s) stored in it.
 Following table lists the different units and their values:
 
->| Storage Measurement Units | Units Equivalent |
-|-----------------|------------------|
-| 0 or 1 | 1 Bit |
-| 4 Bits | 1 Nibble |
-| 8 Bits | 1 Byte |
-| 1024 Bytes | 1 Kilobyte (KB) |
-| 1024 Kilobytes | 1 Megabyte (MB) |
-| 1024 Megabytes | 1 Gigabyte (GB) |
-| 1024 Gigabytes | 1 Terabyte (TB) |
-| 1024 Terabytes | 1 Petabyte (PB) |
-| 1024 Petabytes | 1 Exabyte (EB) |
+> | Storage Measurement Units | Units Equivalent
+--|---------------------------|-----------------
+  | 0 or 1                    | 1 Bit
+  | 4 Bits                    | 1 Nibble
+  | 8 Bits                    | 1 Byte
+  | 1024 Bytes                | 1 Kilobyte (KB)
+  | 1024 Kilobytes            | 1 Megabyte (MB)
+  | 1024 Megabytes            | 1 Gigabyte (GB)
+  | 1024 Gigabytes            | 1 Terabyte (TB)
+  | 1024 Terabytes            | 1 Petabyte (PB)
+  | 1024 Petabytes            | 1 Exabyte (EB)
 {: .prompt-tip }
 
 ### **1.1.4 Super, Mainframe, Mini and Microcomputers**
@@ -607,31 +607,31 @@ Binary counting follows the exact same procedure, and again the incremental subs
 
 ### **Binary to Decimal**
 
-In the binary system, each bit represents an increasing power of $$2$$, with the rightmost bit representing $$ 2^0 $$, the next representing $$ 2^1 $$, then $$ 2^2 $$, and so on. The value of a binary number is the sum of the powers of $$2$$ represented by each "1" bit. For example, the binary number 100101 is converted to decimal form as follows:
+In the binary system, each bit represents an increasing power of $2$, with the rightmost bit representing $2^0$, the next representing $2^1$, then $2^2$, and so on. The value of a binary number is the sum of the powers of $2$ represented by each "1" bit. For example, the binary number 100101 is converted to decimal form as follows:
 
->$$(100101)_{2}$$ = $$(1 * 2^5 + 0 * 2^4 + 0 * 2^3 + 1 * 2^2 + 0 * 2^1 + 1 * 2^{0})_{10}$$  
->$$(100101)_{2}$$ = $$(1 * 32 + 0 * 16 + 0 * 8 + 1 * 4 + 0 * 2 + 1 * 1)_{10}$$  
->$$(100101)_{2}$$ = $$(3710)_{10}$$
+>$(100101)_{2}$ = $(1 * 2^5 + 0 * 2^4 + 0 * 2^3 + 1 * 2^2 + 0 * 2^1 + 1 * 2^{0})_{10}$  
+>$(100101)_{2}$ = $(1 * 32 + 0 * 16 + 0 * 8 + 1 * 4 + 0 * 2 + 1 * 1)_{10}$  
+>$(100101)_{2}$ = $(3710)_{10}$
 {: .prompt-tip }
 
 | Decimal number | Binary number |
-|-------------|---------------|
-| 0  | 0 |
-| 1 | 1  |
-| 2 | 10  |
-| 3 | 11  |
-| 4 | 100  |
-| 5 | 101  |
-| 6 | 110  |
-| 7 | 111  |
-| 8 | 1000  |
-| 9 | 1001  |
-| 10 | 1010  |
-| 11 | 1011  |
-| 12 | 1100  |
-| 13 | 1101  |
-| 14 | 1110  |
-| 15 | 1111  |
+|----------------|---------------|
+| 0              | 0             |
+| 1              | 1             |
+| 2              | 10            |
+| 3              | 11            |
+| 4              | 100           |
+| 5              | 101           |
+| 6              | 110           |
+| 7              | 111           |
+| 8              | 1000          |
+| 9              | 1001          |
+| 10             | 1010          |
+| 11             | 1011          |
+| 12             | 1100          |
+| 13             | 1101          |
+| 14             | 1110          |
+| 15             | 1111          |
 
 ### **Binary to Decimal of Fraction**
 
@@ -639,12 +639,12 @@ So far we have only looked at whole numbers (integers), we need to understand ho
 
 You should have learned at Primary School how a decimal fraction works:
 
-| $10^{1}$ | $10^{0}$ |  | $10^{-1}$ | $10^{-2}$ |
-|------|:-----:|:-----:|:-----:|------:|
-|10 | 1 |  | ${\frac {1}{10}}$ | ${\frac {1}{100}}$ |
-|1 | 2 | . | 7 | 5 |
+| $10^{1}$ | $10^{0}$ |   |     $10^{-1}$     |          $10^{-2}$ |
+|----------|:--------:|:-:|:-----------------:|-------------------:|
+| 10       |    1     |   | ${\frac {1}{10}}$ | ${\frac {1}{100}}$ |
+| 1        |    2     | . |         7         |                  5 |
 
-As you can see, the column headings have been extended to ${\displaystyle 10^{-1}={\frac {1}{10}}}$ and ${\displaystyle 10^{-2}={\frac {1}{100}}}$. We can do the same thing in binary with the column headings ${\displaystyle 2^{-1}={\frac {1}{2}}}$, ${\displaystyle 2^{-2}={\frac {1}{4}}}$, and so on. The number 12.75 in 8 bit binary with 4 bits after the binary point is therefore $8 + 4 + 0.5 + 0.25$:
+As you can see, the column headings have been extended to ${\displaystyle 10^{-1}={\frac {1}{10}}}$ and ${\displaystyle 10^{-2}={\frac {1}{100}}}$. We can do the same thing in binary with the column headings ${\displaystyle 2^{-1}={\frac {1}{2}}}$, ${\displaystyle 2^{-2}={\frac {1}{4}}}$, and so on. The number $12.75$ in 8 bit binary with 4 bits after the binary point is therefore $8 + 4 + 0.5 + 0.25$:
 
 ### **Decimal to Binary Conversion**
 
@@ -685,35 +685,35 @@ This divide-by-2 decimal to binary conversion technique gives the decimal number
 
 You can convert the decimal number in to binary with the similar process done before but with an extra work for the fractional part of the given number. Repeat the process done before for the integer part of the given number and follow these extra step to convert the fraction part:
 
-* Multiply the fractional decimal number by $$ 2 $$.
+* Multiply the fractional decimal number by $2$.
 * Integral part of resultant decimal number will be first digit of fraction binary number.
 * Repeat step 1 using only fractional part of decimal number and then step 2.
 * And finally combine both integral and fractional part of binary number.
 
-  >Let's take an example for n = $$ 4.47 $$  
+  >Let's take an example for n = $4.47$  
   Step 1: Conversion of 4 to binary
   {: .prompt-info }
 
-  | Calculations | Remainder | Quotient |
-  |----------|--------|----------|
-  | $4/2$ | Remainder = $$ 0 $$ | Quotient = $$ 2 $$ |
-  | $2/2$ | Remainder = $$ 0 $$ | Quotient = $$ 1 $$ |
-  | $1/2$ | Remainder = $$ 1 $$ | Quotient = $$ 0 $$ |
+  | Calculations | Remainder       | Quotient       |
+  |--------------|-----------------|----------------|
+  | $4/2$        | Remainder = $0$ | Quotient = $2$ |
+  | $2/2$        | Remainder = $0$ | Quotient = $1$ |
+  | $1/2$        | Remainder = $1$ | Quotient = $0$ |
 
-  >So equivalent binary of integral part of decimal is $$ 100 $$.  
-  Step 2: Conversion of $$ .47 $$ to binary
+  >So equivalent binary of integral part of decimal is $100$.  
+  Step 2: Conversion of $.47$ to binary
   {: .prompt-tip }
 
-  | Calculations | Remainder | Quotient |
-  |----------|--------|----------|
-  | $$ 0.47 * 2 $$ | $$ 0.94 $$ | Integral part: $$ 0 $$ |
-  | $$ 0.94 * 2 $$ | $$ 1.88 $$ | Integral part: $$ 1 $$ |
-  | $$ 0.88 * 2 $$ | $$ 1.76 $$ | Integral part: $$ 1 $$ |
+  | Calculations | Remainder | Quotient           |
+  |--------------|-----------|--------------------|
+  | $0.47 * 2$   | $0.94$    | Integral part: $0$ |
+  | $0.94 * 2$   | $1.88$    | Integral part: $1$ |
+  | $0.88 *2 $   | $1.76$    | Integral part: $1$ |
 
-  >So equivalent binary of fractional part of decimal is $$ .011 $$.  
+  >So equivalent binary of fractional part of decimal is $ .011 $.  
   Step 3: Combined the result of step 1 and 2.  
   Final answer can be written as:  
-  $$ 100 + .011 = 100.011 $
+  $100 + .011 = 100.011$
   {: .prompt-tip }
 
 ### 2.1.2 Calculation in binary addition, subtraction
@@ -830,12 +830,12 @@ Therefore, the decimal number 5 is equal to the binary number `0101`.
 * If there is no carryover, then take the 1’s complement of the resultant, and it is `negative`.
 
 **Example**
-$$(110101)_{2} – (100101)_{2}$$
+$(110101)_{2} – (100101)_{2}$
 
 Solution:
-$$(1 1 0 1 0 1)_{2}$$ = $$5310_{10}$$
+$(1 1 0 1 0 1)_{2}$ = $5310_{10}$
 
-$$(1 0 0 1 0 1)_{2}$$ = $$3710_{10}$$ – subtrahend
+$(1 0 0 1 0 1)_{2}$ = $3710_{10}$ – subtrahend
 
 Now take the 1’s complement of the subtrahend and add with minuend.
 
@@ -852,7 +852,7 @@ Now take the 1’s complement of the subtrahend and add with minuend.
 Therefore, the solution is 010000
 ```
 
-Decimal equivalent of $$(010000)_{2} = 1610_{10}$$
+Decimal equivalent of $(010000)_{2} = 1610_{10}$
 
 ### **Subtraction using 2's complement**
 
@@ -864,7 +864,7 @@ These are the following steps to subtract two binary numbers using 2's complemen
 * If we get the carry by adding both the numbers, then we discard this carry and the result is positive else take 2's complement of the result which will be negative.
 
 **Example:**  
-(i) $$110110_{2} - 10110_{2}$$
+(i) $110110_{2} - 10110_{2}$
 
 The numbers of bits in the subtrahend is 5 while that of minuend is 6. We make the number of bits in the subtrahend equal to that of minuend by taking a `0’ in the sixth place of the subtrahend.
 
@@ -933,16 +933,16 @@ The `AND` gate is so named because, if `0` is called `false` and `1` is called `
 
 `AND` Operation truth table:
 
-|  $A$  |  $B$  |$$Q = A \cap\ B$$ |
-|:-----:|:-----:|:-------------------:|
-|   F   |   F   |          F          |
-|   F   |   T   |          F          |
-|   T   |   F   |          F          |
-|   T   |   T   |          T          |
+| $A$ | $B$ |  $Q = A \cap\ B$  |
+|:---:|:---:|:-----------------:|
+|  F  |  F  |         F         |
+|  F  |  T  |         F         |
+|  T  |  F  |         F         |
+|  T  |  T  |         T         |
 
-In ordinary language terms, if both $A$ and $B$ are `true`, then the conjunction $$A \cap\ B$$ is `true`. For all other assignments of logical values to $A$ and to $B$ the conjunction $$A \cap\ B$$ is false.
+In ordinary language terms, if both $A$ and $B$ are `true`, then the conjunction $A \cap\ B$ is `true`. For all other assignments of logical values to $A$ and to $B$ the conjunction $A \cap\ B$ is false.
 
-It can also be said that if $A$, then $$A \cap\ B$$ is $B$, otherwise $$A \cap\ B$$ is $A$.
+It can also be said that if $A$, then $A \cap\ B$ is $B$, otherwise $A \cap\ B$ is $A$.
 
 **OR**  
 The `OR` gate gets its name from the fact that it behaves after the fashion of the logical inclusive `or`. The output is `true` if either or both of the inputs are `true`. If both inputs are `false`, then the output is `false`. In other words, for the output to be `1`, at least input $A$ `OR` $B$ must be `1`.
@@ -951,12 +951,12 @@ The `OR` gate gets its name from the fact that it behaves after the fashion of t
 
 `OR` Operation truth table
 
-|  $A$  |  $B$  |$$Q = A \cup\ B$$ |
-|:-----:|:-----:|:-------------------:|
-|   F   |   F   |          F          |
-|   F   |   T   |          T          |
-|   T   |   F   |          T          |
-|   T   |   T   |          T          |
+| $A$ | $B$ | $Q = A \cup\ B$ |
+|:---:|:---:|:-----------------:|
+|  F  |  F  |         F         |
+|  F  |  T  |         T         |
+|  T  |  F  |         T         |
+|  T  |  T  |         T         |
 
 **NOT**  
 A logical inverter, sometimes called a `NOT` gate to differentiate it from other types of electronic inverter devices, has only one input. It reverses the logic state. If the input is `1`, then the output is `0`. If the input is `0`, then the output is `1`.
@@ -965,10 +965,10 @@ A logical inverter, sometimes called a `NOT` gate to differentiate it from other
 
 `NOT` Operation truth table
 
-|  $A$  | $Q = \overline A$ |
-|:-----:|:-----------------:|
-|   F   |         T         |
-|   T   |         T         |
+| $A$ | $Q = \overline A$ |
+|:---:|:-----------------:|
+|  F  |         T         |
+|  T  |         T         |
 
 **NAND**  
 The `NAND` gate operates as an `AND` gate followed by a `NOT` gate. It acts in the manner of the logical operation `and` followed by negation. The output is `false` if both inputs are `true`. Otherwise, the output is `true`.
@@ -977,12 +977,12 @@ The `NAND` gate operates as an `AND` gate followed by a `NOT` gate. It acts in t
 
 `NAND` Operation truth table
 
-|  $A$  |  $B$  |  $$X = A \dot\ B$$  |  $$Y = \overline X = \overline {A \dot\ B}$$  |
-|:-----:|:-----:|:-------------------:|:---------------------------------------------:|
-|   F   |   F   |          F          |                       T                       |
-|   F   |   T   |          F          |                       T                       |
-|   T   |   F   |          F          |                       T                       |
-|   T   |   T   |          T          |                       F                       |
+| $A$ | $B$ | $X = A \dot\ B$ | $Y = \overline X = \overline {A \dot\ B}$ |
+|:---:|:---:|:-----------------:|:-------------------------------------------:|
+|  F  |  F  |         F         |                      T                      |
+|  F  |  T  |         F         |                      T                      |
+|  T  |  F  |         F         |                      T                      |
+|  T  |  T  |         T         |                      F                      |
 
 **NOR**  
 The `NOR` gate is a combination `OR` gate followed by an inverter. Its output is `true` if both inputs are `false`. Otherwise, the output is `false`.
@@ -991,12 +991,12 @@ The `NOR` gate is a combination `OR` gate followed by an inverter. Its output is
 
 `NOR` Operation truth table
 
-|  $A$  |  $B$  |    $$X = A + B$$    |   $$Y = \overline X = \overline {A + B}$$     |
-|:-----:|:-----:|:-------------------:|:---------------------------------------------:|
-|   F   |   F   |          F          |                       T                       |
-|   F   |   T   |          T          |                       F                       |
-|   T   |   F   |          T          |                       F                       |
-|   T   |   T   |          T          |                       F                       |
+| $A$ | $B$ | $X = A + B$ | $Y = \overline X = \overline {A + B}$ |
+|:---:|:---:|:-------------:|:---------------------------------------:|
+|  F  |  F  |       F       |                    T                    |
+|  F  |  T  |       T       |                    F                    |
+|  T  |  F  |       T       |                    F                    |
+|  T  |  T  |       T       |                    F                    |
 
 **NOR**  
 The `NOR` gate is a combination `OR` gate followed by an inverter. Its output is `true` if both inputs are `false`. Otherwise, the output is `false`.
@@ -1005,12 +1005,12 @@ The `NOR` gate is a combination `OR` gate followed by an inverter. Its output is
 
 `NOR` Operation truth table
 
-|  $A$  |  $B$  |    $$X = A + B$$    |   $$Y = \overline X = \overline {A + B}$$     |
-|:-----:|:-----:|:-------------------:|:---------------------------------------------:|
-|   F   |   F   |          F          |                       T                       |
-|   F   |   T   |          T          |                       F                       |
-|   T   |   F   |          T          |                       F                       |
-|   T   |   T   |          T          |                       F                       |
+| $A$ | $B$ | $X = A + B$ | $Y = \overline X = \overline {A + B}$ |
+|:---:|:---:|:-------------:|:---------------------------------------:|
+|  F  |  F  |       F       |                    T                    |
+|  F  |  T  |       T       |                    F                    |
+|  T  |  F  |       T       |                    F                    |
+|  T  |  T  |       T       |                    F                    |
 
 **XOR**  
 The `XOR` ( `exclusive-OR` ) gate acts in the same way as the logical `either/or`. The output is `true` if either, but not both, of the inputs are `true`. The output is `false` if both inputs are `false` or if both inputs are `true`. Another way of looking at this circuit is to observe that the output is `1` if the inputs are different, but 0 if the inputs are the same.
@@ -1019,12 +1019,12 @@ The `XOR` ( `exclusive-OR` ) gate acts in the same way as the logical `either/or
 
 `XOR` Operation truth table
 
-|  $A$  |  $B$  | $$X = A \oplus B$$  |
-|:-----:|:-----:|:-------------------:|
-|   F   |   F   |          F          |
-|   F   |   T   |          T          |
-|   T   |   F   |          T          |
-|   T   |   T   |          F          |
+| $A$ | $B$ | $X = A \oplus B$ |
+|:---:|:---:|:------------------:|
+|  F  |  F  |         F          |
+|  F  |  T  |         T          |
+|  T  |  F  |         T          |
+|  T  |  T  |         F          |
 
 **XNOR**  
 The `XNOR` (`exclusive-NOR`) gate is a combination `XOR` gate followed by an inverter. Its output is `true` if the inputs are the same, and `false` if the inputs are different.
@@ -1033,12 +1033,12 @@ The `XNOR` (`exclusive-NOR`) gate is a combination `XOR` gate followed by an inv
 
 `XNOR` Operation truth table
 
-|  $A$  |  $B$  | $$X = A \oplus B$$  | $$Y = {A \odot B} = \overline X = \overline {A \oplus B}$$  |
-|:-----:|:-----:|:-------------------:|:-----------------------------------------------------------:|
-|   F   |   F   |          F          |                              T                              |
-|   F   |   T   |          T          |                              F                              |
-|   T   |   F   |          T          |                              F                              |
-|   T   |   T   |          F          |                              T                              |
+| $A$ | $B$ | $X = A \oplus B$ | $Y = {A \odot B} = \overline X = \overline {A \oplus B}$ |
+|:---:|:---:|:------------------:|:----------------------------------------------------------:|
+|  F  |  F  |         F          |                             T                              |
+|  F  |  T  |         T          |                             F                              |
+|  T  |  F  |         T          |                             F                              |
+|  T  |  T  |         F          |                             T                              |
 
 ### 2.2.4 Lasws of Boolean Algebra
 
@@ -1050,8 +1050,8 @@ Boolean Identities
 
 |     IDENTITY      |                      EXPRESSION                                                                            ||
 |:------------------|:---------------------------------------------------:|:-----------------------------------------------------:|
-| Logical Inverse   |         $ \overline 0 = 1; \overline 1 = 0$                                                                 |
-| Involution        |         $ \overline{\overline A} = A $                                                                      |
+| Logical Inverse   |         $\overline 0 = 1; \overline 1 = 0$                                                                 |
+| Involution        |         $\overline{\overline A} = A$                                                                      |
 |                   |          **OR**                                     |               **AND**                                 |
 | Dominance         | $A + 1 = 1$                                         | $A \dot\ 0 = 0$                                       |
 | Identity          | $A + 0 = A$                                         | $A \dot\ 1 = A$                                       |
@@ -1061,7 +1061,7 @@ Boolean Identities
 | Associative       | $(A + B) + C = A + (B + C)$                         | $(A \dot\ B) \dot\ C = A \dot\ (B \dot\ C)$           |
 | Distributive      | $A + (B \dot\ C) = (A + B) \dot\ (A + C)$           | $A \dot\ (B + C) = (A \dot\ B) + (A \dot\ C)$         |
 | Absorption        | $A \dot\ (A + B) = A$                               | $A \dot\ (A + B) = A$                                 |
-| DeMorgan's        | $\overline{A + B} = \overline A \dot\ \overline B$  | $ \overline{A \dot\ B} = \overline A + \overline B$   |
+| DeMorgan's        | $\overline{A + B} = \overline A \dot\ \overline B$  | $\overline{A \dot\ B} = \overline A + \overline B$   |
 
 ### 2.2.5 Statement and Verification of Laws of Boolean algebra using truth table
 
@@ -1070,23 +1070,23 @@ Boolean Identities
 **Statement:** Demorgan's law says the complement of addition (OR operation) of two boolean variables are the product (AND operation) of the complement of individual variable. Mathematically,  
 $\overline{A + B} = \overline A \dot\ \overline B$
 
-|  $A$  |  $B$  |  $\overline A$  |  $\overline B$  | $A + B$  | $\overline{A + B}$  |  $\overline A \dot\ \overline B$  |
-|:-----:|:-----:|:---------------:|:---------------:|:--------:|:-------------------:|:---------------------------------:|
-|   F   |   F   |        T        |        T        |    F     |          T          |                T                  |
-|   F   |   T   |        T        |        F        |    T     |          F          |                F                  |
-|   T   |   F   |        F        |        T        |    T     |          F          |                F                  |
-|   T   |   T   |        F        |        F        |    T     |          F          |                F                  |
+| $A$ | $B$ | $\overline A$ | $\overline B$ | $A + B$ | $\overline{A + B}$ | $\overline A \dot\ \overline B$ |
+|:---:|:---:|:-------------:|:-------------:|:-------:|:------------------:|:-------------------------------:|
+|  F  |  F  |       T       |       T       |    F    |         T          |                T                |
+|  F  |  T  |       T       |       F       |    T    |         F          |                F                |
+|  T  |  F  |       F       |       T       |    T    |         F          |                F                |
+|  T  |  T  |       F       |       F       |    T    |         F          |                F                |
 
 Here from the above table it is evident that $\overline{A + B} = \overline A \dot\ \overline B$
 
 **Statement:** Demorgan's law also says the complement of product (AND operation) of two boolean variables are the addition (OR operation) of the complement of individual variable. Mathematically,  
-$ \overline{A \dot\ B} = \overline A + \overline B$
+$\overline{A \dot\ B} = \overline A + \overline B$
 
-|  $A$  |  $B$  |  $\overline A$  |  $\overline B$  | $A \dot\ B$  | $\overline{A \dot\ B}$  |  $\overline A + \overline B$  |
-|:-----:|:-----:|:---------------:|:---------------:|:------------:|:-----------------------:|:-----------------------------:|
-|   F   |   F   |        T        |        T        |      F       |            T            |              T                |
-|   F   |   T   |        T        |        F        |      F       |            T            |              T                |
-|   T   |   F   |        F        |        T        |      F       |            T            |              T                |
-|   T   |   T   |        F        |        F        |      T       |            F            |              F                |
+| $A$ | $B$ | $\overline A$ | $\overline B$ | $A \dot\ B$ | $\overline{A \dot\ B}$ | $\overline A + \overline B$ |
+|:---:|:---:|:-------------:|:-------------:|:-----------:|:----------------------:|:---------------------------:|
+|  F  |  F  |       T       |       T       |      F      |           T            |              T              |
+|  F  |  T  |       T       |       F       |      F      |           T            |              T              |
+|  T  |  F  |       F       |       T       |      F      |           T            |              T              |
+|  T  |  T  |       F       |       F       |      T      |           F            |              F              |
 
-Here from the above table it is evident that $ \overline{A \dot\ B} = \overline A + \overline B$
+Here from the above table it is evident that $\overline{A \dot\ B} = \overline A + \overline B$
