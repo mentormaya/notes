@@ -67,7 +67,7 @@
     <span id="search-cancel" >{{ site.data.locales[site.lang].search.cancel }}</span>
 
     {% if page.layout == 'post' %}
-      <button type="button" class="btn btn-primary btn-sm" onclick="generatePDF()">Download as PDF</button>
+      <a href="{{ page.pdf_url }}" class="btn btn-primary btn-sm">Download as PDF</a>
     {% endif %}
 
   </div>
