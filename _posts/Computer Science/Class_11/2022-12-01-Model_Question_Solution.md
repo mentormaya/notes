@@ -2,7 +2,7 @@
 title: Computer Science First Term Question Solution (Theory) for Class 11 (NEB)
 date: 2022-12-01 15:28:25 + 0545
 categories: [Computer Science, Class 11]
-tags: [notes, class 11, computer science, Theory, Question, Model Question, Solution]     # TAG names should always be lowercase
+tags: [notes, class 11, computer science, theory, question, model question, solution]     # TAG names should always be lowercase
 author: ajay
 math: true
 ---

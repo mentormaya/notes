@@ -620,7 +620,10 @@ The browser (temporarily) downloads the code in the local computer and starts pr
 
 ### **3.12 Server Side Scripting using PHP**
 
-### **3.13 Introduction to PHP: Hardware and Software Requirements**
+Download pdf note for All the PHP Topics:
+[Download Note]({{site.url}}/assets/Computer_Science/Class_12/PHP_FULL.pdf)
+
+<!-- ### **3.13 Introduction to PHP: Hardware and Software Requirements**
 
 ### **3.14 Object oriented programming with server side scripting**
 
@@ -642,7 +645,7 @@ The browser (temporarily) downloads the code in the local computer and starts pr
 
 ### **3.23 Fetching data sets getting data about data**
 
-### **3.24 Creating SQL database with server side scripting**
+### **3.24 Creating SQL database with server side scripting** -->
 
 ## **4. Programming in C**
 
