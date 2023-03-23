@@ -647,7 +647,7 @@ Download pdf note for All the PHP Topics:
 
 ### **3.24 Creating SQL database with server side scripting** -->
 
-## **4. Programming in C**
+## **4. [Programming in C]({{site.url}}/assets/Computer_Science/Class_12/C_Programming_II.pdf)**
 
 ### **4.1 Review of C programming concept**
 
@@ -752,7 +752,7 @@ A computer is an electronic device, operating under the control of instructions 
 
 A computer is an electronic device, operating under the control of instructions stored in its own memory that can accept data (input), process the data according to specified rules, produce information (output), and store the information for future use.
 
-## **7. Recent Trends in Technology**
+## **7. [Recent Trends in Technology]({{site.url}}/assets/Computer_Science/Class_12/Recent_Trends.pdf)**
 
 ### **7.1 Concept of Artificial Intelligence (AI) and Robotics**
 
