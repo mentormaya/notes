@@ -9,4 +9,4 @@ pdf: /assets/Computer_System_in_Accounting/Computer System in Accounting.pdf
 
 Computer systems have become essential in modern accounting because they can significantly improve the efficiency and accuracy of financial record-keeping and reporting. Here are some ways in which computer systems are used in accounting:
 
-[Get PDF]({{site.url}}/assets/Computer_System_in_Accounting/Computer System in Accounting.pdf)
+[Get PDF]({{site.url}}/assets/Computer_System_in_Accounting/Computer System in Accounting.pdf) 🤏
